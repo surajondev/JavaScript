@@ -4,7 +4,7 @@ var hours = today.getHours();
 var minute = today.getMinutes()
 var second = today.getSeconds()
 var amp = "am";
-hours = 7;
+hours = 14;
 if (hours > 18){
     document.body.style.backgroundImage = "url('img/night.gif')";
     document.getElementById("clock").style.color="white"
