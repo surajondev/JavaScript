@@ -1,11 +1,12 @@
-This is a basic webpage that can display clock.
-According to the time it can dispaly different gifs. 
-Also it work in 12 Hours Clock format and Mention of AM/PM accordingly.
+## Basic Javascript Projects for Beginners 
 
-Images :
+### Javascript Clock
 
-![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/wk4mchyqhhtt3mc46kaf.PNG)
+In this project, Javscript is used to obtain the time from the client machine & then conditional statements are used to determine the time of the day.
+- The Project can determine the time as **Morning**, **Afternoon** & **Night**.
+- The project contains 3 different images, used as background which will automatically change as per the time of the day.
 
-![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/e2q693avvuh7ofv7hmj8.PNG)
-
-![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/xgisfp809mk5ucmp3zu3.PNG)
+Following languages have been used
+- <img align="left" alt="HTML5" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png" /> HTML
+- <img align="left" alt="CSS3" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png" /> CSS
+- <img align="left" alt="JavaScript" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png" /> JavaScript

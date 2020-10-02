@@ -1,0 +1,23 @@
+#button{
+    background-color: teal;
+    font-family:miracle day;
+    font-size:50px;
+    border-radius: 10px;
+}
+.input{
+    background-color: tomato;
+    border-color: violet;
+    font-family: open sans-serif;
+}
+h1{
+    font-family: miracle day;
+    font-size: 40px;
+    background-color: yellow;
+}
+h3{
+    font-family: miracle day;
+    font-size: 30px;
+}
+body{
+    background-color: darkslateblue;
+}
