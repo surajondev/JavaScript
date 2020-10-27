@@ -7,10 +7,10 @@ var amp = "am";
 hours = 14;
 if (hours > 18){
     document.body.style.backgroundImage = "url('img/night.gif')";
-    document.getElementById("clock").style.color="white"
+    document.getElementById("clock").style.color="yellow"
 }else if (hours <12 && hours>6){
     document.body.style.backgroundImage = "url('img/morning.gif')";
-    document.getElementById("clock").style.color="orange"
+    document.getElementById("clock").style.color="red"
 }
 
 if(hours>12){
