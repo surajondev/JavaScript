@@ -1,0 +1,25 @@
+body {
+    padding: 50px 100px;
+    background-color: lightcoral;
+}
+
+h1 {
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    margin: 0;
+}
+
+#textbox {
+    width: 99.6%;
+}
+
+p {
+    background-color: lightcoral;
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+    padding: 10px;
+    margin: 0;
+}
