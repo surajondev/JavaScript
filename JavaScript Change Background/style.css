@@ -1,0 +1,60 @@
+:root{
+    --backcol:#422426;
+}
+html, body {
+    height: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+body{
+    display: table-cell;
+    vertical-align: middle;
+    background-color: var(--backcol);
+}
+.color-picker{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 50px 50px;
+    border-radius: 25px;
+
+}
+
+.picktext{
+    font-size: 25px;
+    color: black;
+    font-weight: 700;
+    padding: 0px 10px;
+    text-align: center;
+    font-family: 'Fredoka One', cursive;
+
+}
+
+.picker{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.inputcolor{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+}
+
+.color-code{
+    width: 100px;
+    padding: 10px;
+    font-family: 'Montserrat' ,sans-serif;
+}
