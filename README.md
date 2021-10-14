@@ -1,5 +1,5 @@
 # JavaScript
-A JavaScript Repository to creat web app from basic to advance leve.
+A JavaScript Repository to creat web app from basic to advance level. JavaScript is vety important language to improve your sites and the client-side and server-side that allows you to make web pages interactive.
 
 ### Introduction
  This repostiory is mainly created to create web app using JavaScript. This app can level from beginner to expert level.
