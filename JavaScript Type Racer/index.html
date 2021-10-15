@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Type Racer App</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Welcome to Type Racer</h1>
+      <p>
+        Type this text as quick as possible. Then press enter to finish typing.
+      </p>
+      <div class="sample-container">
+        <p id="sample"></p>
+      </div>
+      <textarea id="answer" cols="50" rows="10"></textarea>
+    </div>
+    <div id="result-container">
+      <h3>Your time</h3>
+      <p id="finish-time"></p>
+      <button id="play-again">Play Again</button>
+    </div>
+  </body>
+  <script src="lib/easytimer.min.js"></script>
+  <script src="index.js" type="module"></script>
+</html>
