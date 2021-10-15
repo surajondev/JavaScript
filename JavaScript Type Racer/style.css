@@ -1,0 +1,42 @@
+.container {
+  margin: 8px;
+  padding: 8px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border: 2px solid blue;
+  border-radius: 8px;
+  width: fit-content;
+  height: fit-content;
+}
+
+.sample-container {
+  margin: 8px;
+  padding: 8px;
+  border: 2px solid paleturquoise;
+}
+
+#answer {
+  margin: 8px;
+  padding: 8px;
+  border: 2px solid navy;
+}
+
+#result-container {
+  margin: 8px;
+  padding: 8px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  align-items: center;
+  display: none;
+}
+
+#play-again {
+  background-color: blue;
+  border: none;
+  color: white;
+  padding: 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 8px;
+}
