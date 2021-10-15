@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unsplash Image Search</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <html>
+
+    <head>
+        <title>Unsplash Photo Search App</title>
+        <link rel="stylesheet" href="main.css">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <main>
+            <div class="container">
+                <h1 class="h1">Unsplash Photo Search</h1>
+                <form class="js-form">
+                    <input type="text" class="search-input js-search-input"
+                        placeholder="Search high quality photos from Unsplash" autofocus>
+                    <button type="submit" class="btn">Go</button>
+                </form>
+
+                <div class="result-stats js-result-stats"></div>
+
+                <div class="search-results js-search-results"></div>
+                <div class="pagination">
+                    <button class="hidden prev-btn js-prev"><a href="#top"
+                            style="text-decoration: none; color: white;">Previous page</a></button>
+                    <button class="hidden next-btn js-next"><a href="#top"
+                            style="text-decoration: none; color: white;">Next page</a></button>
+                </div>
+            </div>
+
+            <div class="spinner js-spinner hidden">
+                <div class="double-bounce1"></div>
+                <div class="double-bounce2"></div>
+            </div>
+        </main>
+
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+
+    </html>
+</body>
+
+</html>
