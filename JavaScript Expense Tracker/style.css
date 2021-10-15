@@ -1,0 +1,314 @@
+/* Montserrat And Lato */
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&display=swap");
+/* font-family: 'Montserrat', sans-serif; */
+/* font-family: 'Lato', sans-serif; */
+
+/* some universal properties */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+
+}
+
+.main-container {
+  width: 80%;
+  height: 80vh;
+  border-radius: 6px;
+  box-shadow: 0px 2px 11px -1px rgb(97, 108, 111);
+  display: grid;
+  grid-template-rows: 15% 85%;
+  grid-template-columns: 35% 30% 35%;
+  padding: 1%;
+}
+
+/* [start] All CSS of container of getting input from user */
+
+.get-data {
+  height: 80px;
+  grid-column: 1/-1;
+}
+
+.get-data-flex {
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.get-data-element {
+  padding: 1%;
+  border: none;
+}
+
+.des-box {
+  width: 40%;
+  background-color: #dae0e2;
+  border: 1px solid #dae0e2;
+  outline: none;
+}
+
+.des-box::placeholder,
+.value-box::placeholder {
+  font-size: 0.8em;
+}
+
+.add-btn {
+  width: 10%;
+  border-radius: 0px 10px 10px 0px;
+  background: rgb(97, 108, 111);
+  background: linear-gradient(90deg,
+      rgba(97, 108, 111, 1) 0%,
+      rgba(44, 51, 53, 1) 39%);
+  color: whitesmoke;
+  font-size: 0.8em;
+  font-weight: 600;
+  outline: none;
+  cursor: pointer;
+}
+
+.value-box {
+  width: 10%;
+  background-color: rgb(230, 234, 235);
+  border: 1px solid rgb(230, 234, 235);
+  outline: none;
+}
+
+.select-box {
+  border-radius: 10px 0px 0px 10px;
+  background: linear-gradient(90deg,
+      rgba(44, 51, 53, 1) 37%,
+      rgba(97, 108, 111, 1) 100%);
+  color: whitesmoke;
+  outline: none;
+  cursor: pointer;
+}
+
+option {
+  color: black;
+}
+
+/* [End] All CSS of container of getting input from user */
+
+/* these styles are just to visible layout */
+
+
+/* --------------------------------------- */
+
+/* [START] All CSS for showing calculated data  */
+.show-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.show-data * {
+  /* border: 1px solid black; */
+  text-align: center;
+  border: none;
+}
+
+.cd {
+  padding: 10%;
+  width: 80%;
+  /* border: 1px solid grey; */
+  border-radius: 6px;
+}
+
+.calculated-income {
+  background-color: rgb(143, 238, 236);
+  box-shadow: 0px 2px 11px -1px rgb(143, 238, 236);
+  color: white;
+  text-shadow: 0px 2px 3px #616c6f;
+  font-family: "Lato", sans-serif;
+  font-size: 0.8em;
+}
+
+.calculated-expense {
+  background-color: rgb(250, 142, 125);
+  box-shadow: 0px 2px 11px -1px rgb(250, 142, 125);
+  color: white;
+  text-shadow: 0px 2px 3px #616c6f;
+  font-family: "Lato", sans-serif;
+  font-size: 0.8em;
+}
+
+.small-percentage-show {
+  font-size: 0.5em;
+  font-weight: 600;
+  border-radius: 4px;
+  background-color: rgb(253, 251, 251);
+  opacity: 0.5;
+  color: black;
+}
+
+.small-percentage-show-a {
+  font-size: 0.5em;
+  font-weight: 600;
+  border-radius: 4px;
+  background-color: rgb(253, 251, 251);
+  opacity: 0.5;
+  color: black;
+}
+
+.amount-left {
+  font-family: "Lato", sans-serif;
+  background-color: rgb(245, 201, 107);
+  box-shadow: 0px 2px 11px -1px rgb(245, 201, 107);
+  color: white;
+  text-shadow: 0px 2px 3px #616c6f;
+}
+
+.date {
+  font-family: "Lato", sans-serif;
+}
+
+/* [END] All CSS for showing calculated data  */
+
+/* [START] All CSS for income list and expense list */
+
+.ie-flex {
+  display: flex;
+  width: 100%;
+  /* height: 85%; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* margin: 2%;
+    padding: 50px; */
+  /* overflow: scroll; */
+}
+
+.log {
+  overflow: scroll;
+}
+
+/* .income-box * {
+} */
+
+.ie-bar {
+  margin: 1%;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 4%;
+  align-items: center;
+  border-radius: 6px;
+  box-shadow: 0px 2px 3px #616c6f;
+  background: linear-gradient(90deg,
+      rgba(2, 108, 47, 1) 8%,
+      rgba(46, 204, 114, 1) 62%);
+  color: white;
+}
+
+.ie-bar-des {
+  flex-grow: 2;
+  max-width: inherit;
+  overflow: hidden;
+  font-size: 0.8em;
+}
+
+.ie-value,
+.ie-sno {
+  font-size: 0.8em;
+}
+
+.ie-cross-btn {
+  cursor: pointer;
+}
+
+.expense-only {
+  background: linear-gradient(90deg,
+      rgba(186, 47, 22, 1) 32%,
+      rgba(228, 66, 54, 1) 53%);
+}
+
+.developer {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  margin-top: 5px;
+  color: #616c6f;
+  font-size: 0.6em;
+
+
+}
+
+/* Media Querries */
+@media (max-width: 768px) {
+
+  .all-income-h1,
+  .all-expense-h1 {
+    font-size: 0.9em;
+  }
+
+  .calculated-income,
+  .calculated-expense {
+    font-size: 0.6em;
+  }
+}
+
+@media (max-width: 425px) {
+  .main-container {
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: 1fr;
+    /* overflow: scroll; */
+  }
+
+  .show-data {
+    grid-row: 2/3;
+  }
+
+  .get-data-flex {
+    flex-direction: column;
+    padding: 15%;
+  }
+
+  .get-data-element {
+    width: 85%;
+    border-radius: 4px;
+    text-align: center;
+    margin: 2px;
+  }
+
+  .show-data {
+    margin-top: 38px;
+  }
+
+  .amount-left {
+    font-size: 0.8em;
+  }
+
+  .ie-bar {
+    margin: 2%;
+  }
+
+  .main-container {
+    width: 100%;
+    height: 100vh;
+    border: none;
+    box-shadow: none;
+  }
+
+  .log {
+    height: 30vh;
+    overflow: scroll;
+    margin-top: 5%;
+  }
+
+  .cd {
+    padding: 4%;
+  }
+
+
+  /* Media query for Landscape mode of all devices is not inlcuded */
+}
