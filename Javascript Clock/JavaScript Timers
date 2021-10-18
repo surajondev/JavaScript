@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Countdown Timer</title>
+        <link rel="stylesheet" href="./style.css">
+        <script src="./script.js" defer></script>
+    </head>
+    <body>
+        <h1>Amazin Kenny</h1>
+
+        <div class="countdown-container">
+            <div class="countdown-el days-c">
+                <div class="big-text" id="days">0</div>
+                <span>days</span>
+            </div>
+            <div class="countdown-el hours-c">
+                <div class="big-text" id="hours">0</div>
+                <span>hours</span>
+            </div>
+            <div class="countdown-el minutes-c">
+                <div class="big-text" id="minutes">0</div>
+                <span>minutes</span>
+            </div>
+            <div class="countdown-el seconds-c">
+                <div class="big-text" id="seconds">0</div>
+                <span>seconds</span>
+            </div>
+        </div>
+    </body>
+</html>
