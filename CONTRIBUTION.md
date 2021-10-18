@@ -17,4 +17,4 @@ You can create issue for any feature or discussion regarding addition of project
 ## Things we love to merge in our repo
 
 - More JavaScript Based Web app
-- 
+- | Kehinde Adegoke      | [@amazinkenny](https://github.com/Amazinkenny) |    1     |
