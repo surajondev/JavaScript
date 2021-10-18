@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Click It App</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Welcome to Click It</h1>
+      <p>Click into the black squares as fast as possible</p>
+      <table style="width: 100%" id="squares">
+        <tr>
+          <td id="one"></td>
+          <td id="two"></td>
+          <td id="three"></td>
+        </tr>
+        <tr>
+          <td id="four"></td>
+          <td id="five"></td>
+          <td id="six"></td>
+        </tr>
+        <tr>
+          <td id="seven"></td>
+          <td id="eight"></td>
+          <td id="nine"></td>
+        </tr>
+      </table>
+    </div>
+    <div id="result-container">
+      <h3>Your time</h3>
+      <p id="finish-time"></p>
+      <button id="play-again">Play Again</button>
+    </div>
+  </body>
+  <script src="lib/easytimer.min.js"></script>
+  <script src="index.js" type="module"></script>
+</html>
