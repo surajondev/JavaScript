@@ -11,9 +11,8 @@ body{
 }
 .keys {
     display: flex;
-
+    width:100%;
     align-items: center;
-
   }
 .key {
     border: .4rem solid gold;
