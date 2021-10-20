@@ -1,0 +1,42 @@
+.container {
+  margin: 8px;
+  padding: 8px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border: 2px solid red;
+  border-radius: 8px;
+  width: fit-content;
+  height: fit-content;
+}
+
+table,
+th,
+td {
+  border: 1px solid red;
+}
+
+td {
+  width: 48px;
+  height: 48px;
+  background-color: red;
+}
+
+#result-container {
+  margin: 8px;
+  padding: 8px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  align-items: center;
+  display: none;
+}
+
+#play-again {
+  background-color: blue;
+  border: none;
+  color: white;
+  padding: 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 8px;
+}
