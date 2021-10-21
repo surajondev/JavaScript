@@ -1,0 +1,22 @@
+body{
+    background-color: cadetblue;
+  }
+  h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    top: 40%;
+    left: 37%;
+    color: rgb(126, 37, 37);
+    padding-left: 420px;
+    font-size: 75px;
+    font-weight: 400;
+  }
+  .Clock{
+    color: white;
+    position: absolute;
+    font-size: 60px;
+    top: 40%;
+    left: 39%;
+    transform: translateX(-50%); 
+    transform: translateY(-50%);
+    letter-spacing: 5px;
+  }
