@@ -11,9 +11,9 @@ function armstrong()
     }
     const result = x
     if(sum==x){
-        document.querySelector('.result').innerHTML =x + " is an armstrong number";
+        document.querySelector('.result').innerHTML =x + " is an armstrong number!";
     }else {
-        document.querySelector('.result').innerHTML =x + " is not an armstrong number";
+        document.querySelector('.result').innerHTML =x + " is not an armstrong number!";
     }
     result.preventDefault()
 
