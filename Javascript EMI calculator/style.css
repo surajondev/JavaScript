@@ -1,0 +1,60 @@
+
+.divShell{
+  background-color: antiquewhite
+}
+
+h1{
+  text-align: center
+}
+
+form{
+  align-self: center;
+  color: brown;
+  margin: 6px;
+  padding-top: 20px;
+  padding-bottom:20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.loanBlock{
+  text-align: center;
+  font-weight: bold;
+}
+
+.aprBlock{
+  text-align: center;
+  font-weight: bold;
+  padding: 15px;
+}
+
+.tenureBlock{
+  text-align: center;
+  font-weight: bold;
+  padding: 5px;
+}
+
+.buttonBlock{
+  text-align: center;
+  padding-bottom: 5px;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right:20px
+}
+
+button{
+  position: relative;
+  left: 47%;
+  bottom: 25%;
+  background-color: rgba(116, 55, 73, 0.993);
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  font-size:0.9rem;
+}
+
+#EMICapt{
+  color: rgba(128, 10, 10, 0.651);
+  text-align: center
+}
