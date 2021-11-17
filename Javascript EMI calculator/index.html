@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EMI Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="outerShell">
+    <h1>EMI Calculator</h1>
+    <form name="loan-form" onsubmit="return calculator()">
+    <div class='loanBlock'>
+     Loan Amount<br>
+     <input type=number id="amount"><br>
+    </div>
+     <div class='aprBlock'>
+     Annual Percent Rate<br>
+     <input type="number" name="apr" id="apr"><br>
+     </div>
+      <div class='tenureBlock'>
+     Tenure<br>
+     <input type=number name="tenure" id="tenure"><br>
+     <br>
+      </div>
+      <div id=buttonBlock>
+    <button>Find Out</button>
+      </div>
+    </form>
+    <p id="EMICapt"></p>
+    <script src='script.js'> </script>
+  </div>
+</body>
+</html>
