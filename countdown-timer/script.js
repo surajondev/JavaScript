@@ -1,33 +1,51 @@
-const daysEl = document.getElementById('days');
-const hoursEl = document.getElementById('hours');
-const minutesEl = document.getElementById('minutes');
-const secondsEl = document.getElementById('seconds');
 
-const newYears = '1 Jan 2021';
+var start = document.getElementById('start');
+var reset = document.getElementById('reset');
 
-function countdown(){
-    const newYearsDate = new Date(newYears);
-    const currentDate = new Date();
+var h = document.getElementById("hour");
+var m = document.getElementById("minute");
+var s = document.getElementById("sec");
 
-    const totalSeconds = (newYearsDate - currentDate) / 1000;
+//store a reference to the startTimer variable
+var startTimer = null;
 
-    const days = Math.floor(totalSeconds / 3600 / 24);
-    const hours = Math.floor(totalSeconds / 3600) % 24;
-    const minutes = Math.floor(totalSeconds / 60) % 60;
-    const seconds = Math.floor(totalSeconds) % 60;
+start.addEventListener('click', function(){
+    //initialize the variable
+    function startInterval(){
+        startTimer = setInterval(function() {
+            timer();
+        }, 1000);
+    }
+    startInterval();
+})
 
-    daysEl.innerHTML = days;
-    hoursEl.innerHTML = formatTime(hours);
-    minutesEl.innerHTML = formatTime(minutes);
-    secondsEl.innerHTML = formatTime(seconds);
+reset.addEventListener('click', function(){
+    h.value = 0;
+    m.value = 0;
+    s.value = 0;
+    //stop the timer after pressing "reset"
+    stopInterval()
+})
+
+function timer(){
+    if(h.value == 0 && m.value == 0 && s.value == 0){
+        h.value = 0;
+        m.value = 0;
+        s.value = 0;
+    } else if(s.value != 0){
+        s.value--;
+    } else if(m.value != 0 && s.value == 0){
+        s.value = 59;
+        m.value--;
+    } else if(h.value != 0 && m.value == 0){
+        m.value = 60;
+        h.value--;
+    }
+    return;
 }
 
-function formatTime(time){
-    return time < 10 ? (`0${time}`) : time;
+//stop the function after pressing the reset button, 
+//so the time wont go down when selecting a new time after pressing reset
+function stopInterval() {
+    clearInterval(startTimer);
 }
-
-// Initial Call
-countdown();
-
-setInterval(countdown, 1000);
-
