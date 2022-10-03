@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <head>     
+        <meta charset="UTF-8">                  
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">       
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap" rel="stylesheet" />
+        <title>BREAK CRAFT</title>        
+    </head>                 
+</head>
+
+<body>
+    
+    <div id="load-screen">        
+        <h1>Break-Craft</h1>        
+        <h3>Level1 &emsp;<button onclick="level1()">Start</button>&emsp;High score: <span id="high-score1" class="high-score"></span></h3>
+        <h3>Level2 &emsp;<button onclick="level2()">Start</button>&emsp;High score: <span id="high-score2" class="high-score"></span></h3>
+        <h3>Level3 &emsp;<button onclick="level3()">Start</button>&emsp;High score: <span id="high-score3" class="high-score"></span></h3>
+
+    </div>
+
+    <div id="score-screen" class="remove-load-screen">
+        <h2>Your score is:</h2><span id="score"></span></h3>
+        <button onclick="mainMenu()">Main Menu</button>
+    </div>
+    <canvas id="can" height="500px" width="495px">
+    
+    </canvas>
+    <span id="current-score">Score: 0</span>
+
+    </div>
+
+    <button onclick="reset()" class="reset">Reset High Score</button>
+
+    <script src="script.js"></script>
+
+    
+</body>
+
+</html>

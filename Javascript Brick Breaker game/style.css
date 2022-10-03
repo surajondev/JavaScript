@@ -1,0 +1,154 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;               
+    font-family: "Bowlby One SC", cursive;    
+    font-weight: 1px;
+    font-size: 1.1rem;
+    text-shadow:
+    -1px -1px 0 #000,    
+    1px -1px 0 #000,   
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    color: #f1d532;     
+    
+}
+
+
+#can {
+    border: solid rgb(255, 255, 255) 5px;
+    /*background: #caa8f5;*/
+    background-image: url(2plain.jpg);
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #9984d4;
+}
+
+body {
+ 
+    background-image: url(minecraft-steve.png) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*background: #230c33;*/
+    color: white;
+}
+
+.reset {
+    cursor: pointer;
+    position: absolute;
+    top: 95%;
+    left: 40%;
+    width: 22%;
+    text-align: center;
+}
+
+#load-screen > h1{
+    margin-top: 30px;
+    margin-bottom:  50px;
+    font-size: 48px;
+}
+#load-screen > h3{
+    margin-top: 30px;
+    margin-bottom:  50px;
+    
+}
+
+
+#load-screen {
+  /* margin-top: 2.5px;*/
+   /* margin-left: 2.5px; */
+
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 495px;
+    height: 500px;
+    background-color: aliceblue;
+    position: absolute;
+    z-index: 3;
+    text-align: center;
+    background-image: url(minecraft-grass.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: flex-start;
+}
+
+#current-score {
+    position:absolute;
+    left: 58%;
+    top: 12%;
+    width: 130px;
+    height: 30px;
+    text-align: center;
+        z-index: 1;
+}
+#score-screen > h2{
+    font-size: 28px;
+
+}
+
+#score-screen > span{
+    font-size: 28px;
+
+}
+#score-screen {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 495px;
+    height: 500px;
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-evenly;
+
+    
+    background-image: url(minecraft-grass.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+button{
+    background-color: darkgreen;
+}
+
+.remove-load-screen {
+    visibility: hidden;
+}
+
+/*.button {
+    appearance: auto;
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+    cursor: default;
+    background-color: -internal-light-dark(rgb(160, 9, 9), rgb(rgb(173, 29, 29)
+    box-sizing: border-box;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    padding: 1px 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: -internal-light-dark(rgb(253, 161, 161), rgb(230, 117, 224));
+    border-image: initial;
+}
