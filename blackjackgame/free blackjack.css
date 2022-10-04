@@ -1,0 +1,35 @@
+body
+{
+ text-align: center;
+ background-color:  #3f3f3f;
+ color: white;
+ font-weight: bold;
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1{
+    color:goldenrod
+
+}
+button{
+    background-color:yellow;
+    width: 130px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: bold;
+    border-radius: 2px;
+}
+ #new-el{
+    background-color:yellow;
+    width: 130px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: bold;
+    border-radius: 2px;
+    margin-top: 10px;
+}
+#new-el:hover{
+    background-color : red;
+}
+ 
