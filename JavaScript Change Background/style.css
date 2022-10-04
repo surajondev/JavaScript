@@ -1,7 +1,9 @@
-:root{
-    --backcol:#422426;
+:root {
+    --backcol: #ea1d2b;
 }
-html, body {
+
+html,
+body {
     height: 100%;
 }
 
@@ -9,32 +11,46 @@ html {
     display: table;
     margin: auto;
 }
-body{
+
+body {
     display: table-cell;
-    vertical-align: middle;
-    background-color: var(--backcol);
+
+    background-color: #f4ecd6;
 }
-.color-picker{
-    display: inline-flex;
+
+.palette {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%l
+}
+
+
+.color-picker {
+    display: block;
     justify-content: center;
     align-items: center;
     background-color: white;
     padding: 50px 50px;
     border-radius: 25px;
+    margin: 20px;
+    width: 100px;
 
 }
 
-.picktext{
+.picktext {
     font-size: 25px;
     color: black;
     font-weight: 700;
     padding: 0px 10px;
     text-align: center;
     font-family: 'Fredoka One', cursive;
+    margin-bottom: 100px;
+    margin-top: 20px;
 
 }
 
-.picker{
+.picker {
     width: 90px;
     height: 90px;
     border-radius: 50%;
@@ -43,18 +59,24 @@ body{
 
 }
 
-.inputcolor{
+.inputcolor {
     width: 150px;
     height: 150px;
-    position: absolute;
+    position: relative;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     cursor: pointer;
 }
 
-.color-code{
+.color-code {
     width: 100px;
     padding: 10px;
-    font-family: 'Montserrat' ,sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.color-code:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    transition-duration: 150ms;
 }
