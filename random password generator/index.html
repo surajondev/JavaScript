@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<head>
+  <title>Password Generator</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+</head>
+<body>
+  <!-- INSERT HTML HERE -->
+  <div class="container">
+    <h2>Password Generator</h2>
+    <div class="result-container" onclick="showText()">
+      <span id="result"></span>
+      <button class="btn" id="clipboard">
+        <i class="far fa-clipboard"></i>
+      </button>
+    </div>
+    <div class="settings">
+      <div class="setting">
+        <label>Password length</label>
+        <input type="number" id="length" min='6' max='15' value='15' />
+      </div>
+      <div class="setting">
+        <label>Include uppercase letters</label> 
+        <input type="checkbox" id="uppercase" checked />
+      </div>
+      <div class="setting">
+        <label>Include lowercase letters</label> 
+        <input type="checkbox" id="lowercase" checked />
+      </div>
+      <div class="setting">
+        <label>Include numbers</label> 
+        <input type="checkbox" id="numbers" checked />
+      </div>
+      <div class="setting">
+        <label>Include symbols</label> 
+        <input type="checkbox" id="symbols" checked />
+      </div>
+    </div>
+    <button class="btn btn-large" id="generate">
+      Generate password
+    </button>
+    <p class="copiedText " id="copyTxt">Text Copied To Clipboard!</p>
+  </div>
+
+  </div>
+  <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
