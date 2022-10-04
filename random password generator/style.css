@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('https://images.unsplash.com/photo-1535320404287-416e2c6d2b41?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8M3x8fGVufDB8fHx8&w=1000&q=80');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  display: flex;
+  font-family: 'Muli', sans-serif;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  min-height: 100vh;
+}
+
+p {
+  margin: 5px 0;
+}
+
+h2 {
+  margin: 10px 0 20px;
+  text-align: center;
+}
+
+input[type=checkbox] {
+  margin-right: 0;
+}
+
+.container {
+  color: #fff;
+  margin: 40px auto;
+  background-color: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  width: 350px;
+  border-radius: 15px;
+  padding: 32px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+.result-container {
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  font-size: 18px;
+  letter-spacing: 1px;
+  padding: 12px 10px;
+  height: 50px;
+  width: 100%;
+}
+
+.result-container #result {
+    word-wrap: break-word;
+  max-width: calc(100% - 40px);
+}
+
+#length{
+  width: 40px;
+  padding: 3px;
+  border: 0px;
+  color: black;
+}
+
+.result-container .btn {
+  font-size: 20px;
+  position: absolute;
+  height: 50px;
+  top: 0;
+  right: 0;
+  width: 100%;
+  text-align: right;
+}
+
+.btn {
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 8px 12px;
+  background-color: transparent;
+}
+
+.btn-large {
+  display: block;
+  width: 100%;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.btn-large:hover{
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.setting {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.copiedText{
+  opacity: 0;
+  color: white;
+  text-align: center;
+  margin: auto auto;
+  margin-top: 20px;
+  font-size: 13px;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 7px 0px;
+  width: 70%;
+  border-radius: 40px;
+}
+
+.active{
+  animation: ShowCopyText 2s linear forwards;
+}
+
+@keyframes ShowCopyText{
+  0%{
+    opacity: 0;
+  }
+  10%{
+    opacity: 1;
+  }
+  90%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .result-container {
+    font-size: 14px;
+  }
+}
