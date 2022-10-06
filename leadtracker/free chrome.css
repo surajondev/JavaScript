@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+    padding: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    min-width: 400px;
+}
+ 
+input{
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border:1p solid #5f935f;
+    margin-bottom: 4px;
+}
+button{
+    background-color: aqua;
+    box-shadow: red;
+    padding: 10px 20px ;
+    font-weight: bold;
+     
+
+}
+#delete-btn{
+    font-weight: bold;
+    color: green;
+    background-color:white;
+}
+ul{
+    list-style: none;
+    margin-top: 20px;
+    padding-left: 0;
+ color:greenyellow;
+}
+li{
+    margin: 5px;
+}
+a{
+    color:greenyellow;
+}
+
+ 
