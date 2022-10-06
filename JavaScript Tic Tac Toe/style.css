@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css?family=Amatic+SC|Dawning+of+a+New+Day|League+Script|Loved+by+the+King|Waiting+for+the+Sunrise");
+body, html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-flow: column no-wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.paper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 700px;
+  height: 500px;
+  background-image: -webkit-repeating-linear-gradient(left, #3a2493, 1px, transparent 1px, transparent 20px), -webkit-repeating-linear-gradient(bottom, #3a2493, 1px, #3a2493 1px, #3a2493 20px);
+  background-image: repeating-linear-gradient(90deg, #3a2493, 1px, transparent 1px, transparent 20px), repeating-linear-gradient(90deg, #316b6a, 1px, #3a2493 1px, #3a2493 20px);
+  background-size: 20px 20px;
+  background-origin: content-box;
+  padding: 1em auto;
+  position: relative;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5), 0 0 50px rgba(0, 0, 0, 0.1) inset;
+}
+
+.rotated {
+  transform: rotate(0deg);
+}
+
+.paper:after, .paper:before {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  left: auto;
+  max-width: 300px;
+  background: white;
+  transform: rotate(0deg);
+}
+
+.paper:after {
+  bottom: 10px;
+  right: 7px;
+  width: 80%;
+  top: 90%;
+  box-shadow: 3px 15px 12px #777;
+  transform: rotate(0deg);
+}
+
+.paper:before {
+  bottom: 10px;
+  left: 7px;
+  width: 70%;
+  top: 80%;
+  box-shadow: -3px 15px 12px #777;
+  transform: rotate(0deg);
+}
+
+#board {
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 300px;
+  margin: 50px auto;
+}
+
+#logo {
+  width: 35%;
+  height: auto;
+  margin: 30px;
+}
+#logo svg {
+  fill: #ffffff;
+}
+
+#gameboard {
+  position: absolute;
+  top: 5px;
+  left: 20px;
+  width: 100%;
+  height: auto;
+  stroke-dasharray: 250;
+  stroke-dashoffset: 250;
+  stroke: #ffffff;
+  stroke-width: 1.25px;
+  stroke-miterlimit: 10;
+  fill: none;
+}
+#gameboard .st4 {
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+}
+
+draw {
+  animation: dash 0.5s ease-in-out forwards;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+.tile {
+  margin: 5%;
+  width: 22%;
+  height: 22%;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+#winner {
+  width: 600px;
+  height: max-content;
+  margin: auto;
+  margin-top: 60px;
+  position: absolute;
+  align-self: flex-start;
+  text-align: center;
+  transform: rotate(5deg);
+}
+
+#reset {
+  margin: 0.5vh;
+  padding: 0;
+  width: 50%;
+  height: 30px;
+  vertical-align: middle;
+  text-align: center;
+  border-radius: 20px;
+  cursor: pointer;
+  float: left;
+}
+
+h1, h2 {
+  font-family: "Waiting for the Sunrise", cursive;
+  margin: 0;
+  font-size: 40px;
+  color: #ffffff;
+}
+
+#settings, .container, .options {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#settings {
+  height: 70%;
+  align-items: center;
+  align-content: center;
+}
+#settings .container {
+  height: 30%;
+  align-items: center;
+}
+#settings .container .options {
+  flex-direction: row;
+  width: 60%;
+}
+
+.btn {
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.btn:hover {
+  transform: rotate(3deg) scale(1.3);
+}
+
+.disable {
+  display: none !important;
+}
+
+.fadeBounceIn {
+  animation: fadeBounceIn 1s ease-in-out forwards;
+}
+
+.fadeIn {
+  animation: fadeIn 2s ease-in-out forwards;
+}
+
+@keyframes fadeBounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.4);
+  }
+  80% {
+    transform: scale(1.4);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+} 
