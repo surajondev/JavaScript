@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="location">
+            <input type="text" id="country" placeholder="Country">
+            <input type="text" id="city" placeholder="City">
+            <input type="submit" id="check" value="Check">
+        </div>
+        <img src="assets/weather-app.png" alt="" id="tempIcon">
+        <h2 id="weatherCountry">Add your Weather</h2>
+        <h2 id="temperature"><b>C</b></h2>
+        <h2 id="weatherDescription"></h2>
+        <ul style="list-style-type: none;">
+            <li id="feelsLike"></li>
+            <li id="humidity"></li>
+            <li id="longitude"></li>
+            <li id="latitude"></li>
+        </ul>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

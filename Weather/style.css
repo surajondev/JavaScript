@@ -1,0 +1,112 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    color: rgb(0, 0, 0);
+}
+
+#container {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background: linear-gradient(to right, #FF416c, #FF4B4B);
+    background-image: url(assets/weather.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#container #location {
+    height: 60px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 6%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#container input {
+    height: 50px;
+    width: 300px;
+    margin: 0px 20px;
+    padding: 0 20px;
+    border: 1px solid rgb(0, 0, 0);
+    outline: none;
+    background: #ffffff50;
+    font-size: 20px;
+    border-radius: 25px 10px;
+    color: rgb(19, 18, 18);
+}
+
+#container input::placeholder {
+    color: #080808a9;
+}
+
+#container input[type="submit"] {
+    cursor: pointer;
+    width: 150px;
+    background: rgb(2, 2, 2);
+    color: #12bbee;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+#tempIcon {
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    top: 27%;
+    right: 20%;
+}
+
+#weatherCountry {
+    font-size: 40px;
+    position: absolute;
+    top: 40%;
+    left: 15%;
+}
+
+#temperature {
+    font-size: 45px;
+    position: absolute;
+    bottom: 35%;
+    left: 43%;
+}
+
+#temperature b {
+    color: #07070790;
+}
+
+#weatherDescription {
+    font-size: 30px;
+    position: absolute;
+    bottom: 23%;
+    left: 43%;
+}
+
+#container ul {
+    position: absolute;
+    bottom: 3%;
+    left: 3%;
+}
+
+#container ul li {
+    font-size: 22px;
+    margin: 20px 0;
+}
+#weatherCountry{
+    background-image: url(assets/animate.gif);
+    background-size: cover;
+    color: transparent;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    text-transform: uppercase;
+    font-size: 70px;
+    margin-left:-100px ;
+    font-weight: bold;
+    font-family: "Impact";
+    transition: .35s ease-in-out;
+    position: absolute;
+}
