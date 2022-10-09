@@ -6,7 +6,7 @@ A JavaScript Repository to creat web app from basic to advance level. JavaScript
  
  ## Contribution
  
- Read `Contribution.md` for more details.
+ You can read `Contribution.md` for more contributing guidelines.
  
  Following languages have been used
 - <img align="left" alt="HTML5" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png" /> HTML
