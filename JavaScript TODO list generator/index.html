@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>TODO List</title>
+
+    <!-- bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <style>
+        .input-box {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .todolist ol li {
+            padding: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <div class="col-md-12 input-box">
+                    <div class="col-md-8">
+                        <input type="text" id="myInput" class="form-control" value="" placeholder="please enter the todo item here">
+                    </div>
+                    <div class="col-md-4">
+                        <button class="btn btn-default" onclick="newElement()">ADD TODO</button>
+                    </div>
+                </div>
+
+                <div class="col-md-8 todolist">
+                    <ol id="myUL">
+                        <li>Play Cricket</li>
+                        <li>Listen Music</li>
+                        <li>Buy Groceries</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js">
+    </script>
+</body>
+
+</html>
