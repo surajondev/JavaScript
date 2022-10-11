@@ -1,0 +1,109 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Lexend", sans-serif;
+  color: rgb(38, 38, 38);
+}
+
+.main_section {
+  text-align: center;
+  margin: 60px auto;
+  width: 650px;
+}
+.main_section h1 {
+  margin: 80px 0 60px;
+  font-size: 42px;
+}
+.create_url {
+  display: flex;
+  align-items: center;
+}
+.create_url input {
+  padding: 12px 20px;
+  font-size: 18px;
+  border-radius: 6px;
+  border: 3px solid rgb(76, 87, 253);
+  outline: none;
+  margin-right: 12px;
+  width: 100%;
+}
+.main_section button {
+  border: none;
+  outline: none;
+  padding: 13px 20px;
+  border-radius: 4px;
+  background-color: rgb(76, 87, 253);
+  color: white;
+  font-size: 18px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+.main_section button:hover {
+  transform: scale(1.1);
+}
+
+.url_section {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+.url_div {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+.url_div p {
+  width: 100%;
+  text-align: start;
+  padding: 14px 20px;
+  background-color: rgb(235, 240, 255);
+  border-radius: 6px;
+  margin-right: 12px;
+  overflow-x: hidden;
+}
+.url_div button {
+  background-color: rgb(14, 118, 0);
+}
+.url_container {
+  background-color: aqua!;
+}
+
+/**************** medium device *************/
+@media screen and (max-width: 700px) {
+  .main_section h1 {
+    margin-top: 40px;
+    font-size: 32px;
+  }
+  .main_section {
+    width: 500px;
+  }
+  .create_url input {
+    font-size: 16px;
+  }
+  .main_section button {
+    font-size: 16px;
+  }
+}
+
+/**************** Small device *************/
+@media screen and (max-width: 550px) {
+  .main_section h1 {
+    margin-top: 40px;
+    font-size: 30px;
+    line-height: 45px;
+  }
+  .main_section {
+    width: 95%;
+  }
+  .create_url input {
+    font-size: 14px;
+  }
+  .main_section button {
+    font-size: 14px;
+  }
+  .url_div p {
+    font-size: 14px;
+  }
+}
