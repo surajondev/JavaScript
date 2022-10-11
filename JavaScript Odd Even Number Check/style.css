@@ -1,0 +1,41 @@
+body {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    margin-top: 20vh;
+}
+
+h2 { 
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+.btn { 
+    color: #fff;
+    background-color: green;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+}
+
+form { 
+    color: green;
+}
+
+.button {
+    color: green;
+}
+
+.number {
+    padding: 8px 16px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.result {
+    font-size: 20px;
+	color: green;
+}
+ 
