@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="icons/thunder.png">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <title>Weather app</title>
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-primary">
+        <h3 class="title">⚡Weather app</h3>
+    </nav>
+
+    <div class="container">
+      <div class="container-flex">
+        
+         <div class="weather-card mt-2">
+            <div>
+                <input type="text" placeholder="Enter place" class="m-1 city-input pl-4">
+                <button type="button" class=" btn-search m-1">Search</button>
+           </div>
+    
+          <div class="lg-card m-2" data-aos="fade-up">
+            <div d-flex flex-column>
+               <img src="icons/011-cloud.png" class="weather-icon">
+               <h4 class="weather">It's a lovely day</h4>
+               <h2 class="temp">0</h2>
+               <p>Celsius</p>
+
+               <div class="mb-2 m2">
+                <p class="float-left place">Place</p>
+                 <p class="float-right date"></p>
+               </div>
+            </div>
+          </div>
+        </div>
+
+    <div class="d-flex flex-column">
+        <div class="weather-data">
+          <div class="all-cards " data-aos="fade-up">
+ 
+            <div class="sm-card">
+              <img src="icons/sun.png"class="icon">
+              <p>Max</p>
+              <h5 class="max-temp value"></h5>
+            </div>
+
+            <div class="sm-card ">
+              <img src="icons/climate.png"class="icon">
+              <p>Min</p>
+              <h5 class="min-temp value"></h5></strong>
+            </div>
+
+            <div class="sm-card ">
+              <img src="icons/water.png"class="icon center">
+              <p>Humidity</p>
+              <h5 class="humidity value"></h5>
+            </div>
+
+            <div class="sm-card">
+              <img src="icons/017-wind.png"class="icon">
+              <p>Wind Speed</p>
+              <h5 class="wind-speed value"></h5>
+            </div> 
+
+            <div class="sm-card">
+              <img src="icons/indicator.png"class="icon">
+              <p>Pressure</p>
+              <h5 class="pressure value"></h5>
+            </div> 
+          </div>
+        </div>
+
+        <div class="tagline">
+            <h3>Get real time weather of any location with</h3>
+            <h3 class="date">⚡Weather app</h3>
+        </div>
+    </div>
+      </div>
+    </div>
+    <footer class="bottom">Made with &#10084; By <a href="https://github.com/rajnish254">Rajnish kumar</a></footer>
+
+</body>
+<script src="app.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>AOS.init();</script>
+</html>
