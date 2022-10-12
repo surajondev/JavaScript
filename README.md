@@ -4,7 +4,7 @@ A JavaScript Repository to create web app from basic to advance level. JavaScrip
 
 ### Introduction
 
-This repostiory is mainly created to create web app using JavaScript. This app can level from beginner to expert level.
+This repository is mainly created to create web app using JavaScript. This app can level from beginner to expert level.
 
 ## Contribution
 
