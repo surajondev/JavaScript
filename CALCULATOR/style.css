@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Lato:wght@100;300&family=Libre+Franklin&family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Lato:wght@100;300&family=Poppins:wght@600&family=Varela+Round&display=swap');
+
+body {
+    background-color: antiquewhite;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    font-family: 'Libre Franklin', sans-serif;
+
+}
+
+nav ul {
+    align-items: center;
+    display: flex;
+    list-style-type: none;
+    height:  60px;
+    background-color: black;
+    color: white;
+    border-radius:20px;
+}
+
+nav ul li {
+    padding: 0 20px;
+}
+
+.brand img {
+    width:  30px;
+    padding: 0 20px;
+
+}
+
+.png img {
+    width: 35px;
+    padding: 0 20px;
+align-items: center;
+
+
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+
+}
+
+.container {
+    text-align: center;
+    margin-top: 40px;;
+}
+
+table {
+    margin: auto;
+
+}
+
+input {
+    font-size: 34px;
+    margin: 20px;
+    width: auto;
+    height:50px;
+    border: 5px solid orange;
+    font-weight: 600;
+    border-radius:  21px ;
+}
+
+button {
+    font-size:40px;
+    background: chocolate;
+    width: 100px;
+    height: 60px ;
+    border-radius: 20px;
+}
+
+.calculator {
+    display: inline-block;
+    background-color: aquamarine;
+    padding: 23px;
+    border-radius: 53px; ;
+    border:5px  solid black;
+}
