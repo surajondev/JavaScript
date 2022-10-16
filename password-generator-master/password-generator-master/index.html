@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <title>Random Password Generator</title>
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-6 offset-sm-3">
+          <div class="card mt-5 shadow-lg mb-5">
+            <div class="card-body">
+              <h5 class="card-title text-center mb-3 display-4">
+                Generate a Password!
+              </h5>
+              <div class="card bg-success bg-opacity-50 clickCopy">
+                <div
+                  class="card-body d-flex flex-row flex-wrap justify-content-between"
+                >
+                  <div class="mt-auto mb-auto col-10">
+                    <p class="show lead pb-0">...click to copy password</p>
+                  </div>
+                  <div
+                    class="h-100 text-center mt-auto mb-auto border-start border-dark"
+                  >
+                    <img
+                      src="assets/clipboard.svg"
+                      class="rounded copy p-1 mb-auto mt-auto"
+                      alt="Copy"
+                    />
+                  </div>
+                </div>
+              </div>
+              <hr />
+              <form action="" id="form">
+                <div class="mb-3 form-floating">
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="length"
+                    name="limit"
+                    required
+                    min="5"
+                    max="70"
+                  />
+                  <label for="length" class="form-label">Length</label>
+                </div>
+                <p class="lead">Characters to include:</p>
+                <div class="mb-3 form-check">
+                  <label for="numbers" class="form-check-label"
+                    >Numbers(0-9)</label
+                  >
+                  <input
+                    type="checkbox"
+                    name="type[numbers]"
+                    class="form-check-input"
+                    id="numbers"
+                  />
+                </div>
+                <div class="mb-3 form-check">
+                  <label for="sletters" class="form-check-label"
+                    >Small Letters (a-z)</label
+                  >
+                  <input
+                    type="checkbox"
+                    name="type[sletters]"
+                    class="form-check-input"
+                    id="sletters"
+                  />
+                </div>
+                <div class="mb-3 form-check">
+                  <label for="cletters" class="form-check-label"
+                    >Capital Letters (A-Z)</label
+                  >
+                  <input
+                    type="checkbox"
+                    name="type[cletters]"
+                    class="form-check-input"
+                    id="cletters"
+                  />
+                </div>
+                <div class="mb-3 form-check">
+                  <label for="symbols" class="form-check-label"
+                    >Symbols (@,!,#,$,&,%)</label
+                  >
+                  <input
+                    type="checkbox"
+                    name="type[symbols]"
+                    class="form-check-input"
+                    id="symbols"
+                  />
+                </div>
+                <button class="btn btn-dark w-100">Generate</button>
+              </form>
+              <div class="alert alert-info mt-3 mb-3 small">
+                <img src="assets/info-circle.svg" class="me-3" alt="info" />
+                <ul class="ms-2 mt-0">
+                  <li>Minimum Length is 5.</li>
+                  <li>Maximum Length is 70.</li>
+                  <li>Strong password must contain 10-16 characters.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <style>
+      body {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.3),
+            rgba(0, 0, 0, 0.3)
+          ),
+          url("./assets/gradient.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    </style>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyDKrOTvDzpoPr0SDtRlrpkd7GTN1puDOTY",
+        authDomain: "password-strong-generator.firebaseapp.com",
+        projectId: "password-strong-generator",
+        storageBucket: "password-strong-generator.appspot.com",
+        messagingSenderId: "1053017747706",
+        appId: "1:1053017747706:web:c26e3e8199eac6efa61943",
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+    </script>
+
+    <script src="index.js"></script>
+  </body>
+</html>
