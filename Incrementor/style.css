@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    background-color: #f6f7f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 100vh;
+    margin: 0;
+}
+.container {
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 80px;
+}
+
+button {
+    border: 0px;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #d95bf0;
+}
+
+button:hover {
+    background-color: #5e3166;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+.button:focus{
+    outline: 0;
+}
