@@ -1,0 +1,74 @@
+html, body{
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+#fondo{
+  background: url(https://i.imgur.com/ygVpJMP.jpg) no-repeat left top;
+  /*background: url(https://s28.postimg.org/3z90275y5/yg_Vp_JMP.jpg) no-repeat left top;*/
+  background-size: cover;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+#encima{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  -webkit-mask: url(https://i.imgur.com/AYJuRke.png);
+  /*-webkit-mask: url(https://veuwer.com/i/3fxb.png);*/
+  -webkit-mask-size: 3000% 100%;
+  
+  -webkit-animation: mask-playzero 2s steps(29) infinite;
+}
+
+#encima:before{
+  content: '';
+  background: url(https://i.imgur.com/dJLNhFN.jpg) no-repeat left top;
+  /*background: url(https://s22.postimg.org/urrt8jfq9/d_JLNh_FN.jpg) no-repeat left top;*/
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@-webkit-keyframes mask-playzero {
+    from {
+    -webkit-mask-position: 0 0;
+    -ms-mask-position: 0 0;
+    -moz-mask-position: 0 0;
+    -o-mask-position: 0 0;
+    mask-position: 0 0;
+}
+to {
+    -webkit-mask-position: 100% 0;
+    -ms-mask-position: 100% 0;
+    -moz-mask-position: 100% 0;
+    -o-mask-position: 100% 0;
+    mask-position: 100% 0;
+}
+}
+  @keyframes mask-playzero {
+    from {
+    -webkit-mask-position: 0 0;
+    -ms-mask-position: 0 0;
+    -moz-mask-position: 0 0;
+    -o-mask-position: 0 0;
+    mask-position: 0 0;
+}
+to {
+    -webkit-mask-position: 100% 0;
+    -ms-mask-position: 100% 0;
+    -moz-mask-position: 100% 0;
+    -o-mask-position: 100% 0;
+    mask-position: 100% 0;
+}
+  }

@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&family=Mirza&display=swap');
+
+/* utilties  */
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-size: 100%;
+    font-family: 'Baloo Tammudu 2','Mirza', cursive;
+}
+
+:root{
+    --darkcolor : black;
+    --boxshadow2: 2px 2px 5px rgba(255, 255, 255, 0.05),2px -2px 5px rgba(255, 255, 255,0.05),-2px 2px 5px rgba(255, 255, 255,0.05),-2px -2px 5px rgba(255, 255, 255,0.05);
+    --boxshadow3: 2px 2px 5px rgba(95, 91, 91, 0.5),2px -2px 5px rgba(95, 91, 91, 0.5),-2px 2px 5px rgba(95, 91, 91, 0.5),-2px -2px 5px rgba(95, 91, 91, 0.5);
+}
+
+body{
+    font-size: 1.1rem;
+    color: white;
+    z-index: -1;
+    background-color: rgb(0, 148, 228);
+    /* background: linear-gradient(180deg, rgb(0, 148, 228) 80%, rgb(194, 43, 240)) ; */
+    transition: all 1.2s ease 0s;
+    height: 110%;
+}
+
+
+body::before{
+     /* bgm   */
+    content: "";
+    /* background:#4ab7f7; */
+    /* background:rgb(74, 183, 247); */
+    /* background:rgb(79, 82, 83); */
+    background:rgb(255, 255, 255,0.16);
+
+    /* position  */
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 150%;
+
+     /* below content  */
+    z-index: -2;
+
+
+    transition: all 1.2s ease 0s;
+    animation: bgmrocks 6s ease 0s infinite alternate backwards;
+}
+
+@keyframes bgmrocks {
+
+    0%,100% 
+	{
+		clip-path: polygon(0% 0%, 0% 42%, 13% 48%, 26% 55%, 41% 64%, 56% 65%, 69% 58%, 84% 45%, 100% 38%, 100% 0%);
+	}
+	50%
+	{
+		clip-path: polygon(0% 0%, 0% 63%, 14% 57%, 25% 50%, 40% 42%, 56% 40%, 71% 44%, 84% 50%, 100% 60%, 100% 0%);
+	}
+}
+
+/* class effects  */
+.glass{
+    border-radius: 18px;
+    box-shadow: 20px 20px 50px 1px rgb(0, 0, 0,0.5);
+    background: rgb(255, 255, 255,0.1);
+    border-top: 0.5px solid white;
+    border-left: 0.5px solid white;
+    backdrop-filter:blur(7px);
+    margin: 12px;
+    padding: 12px;
+    cursor: pointer;
+}
+.glass2{
+    border-radius: 12px;
+    /* box-shadow: 15px 15px 20px 1px rgba(226, 219, 219, 0.6),-15px -15px 20px 1px rgba(226, 219, 219, 0.6); */
+    box-shadow: 15px 15px 20px 1px rgb(54, 106, 251,0.8),-15px -15px 20px 1px rgb(54, 106, 251,0.8);
+    background: rgb(255, 255, 255,0.1);
+    border: 0.5px solid white;
+    backdrop-filter:blur(7px);
+    margin: 3px;
+    padding: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease 0s;
+}
+.glass3{
+    border-radius: 12px;
+    background: rgb(255, 255, 255,0.1);
+    border: 0.5px solid white;
+    backdrop-filter:blur(7px);
+    margin: 4px;
+    padding: 5px;
+    cursor: pointer;
+}
+.glass4{
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.02);
+    border: 0.5px solid white;
+    backdrop-filter:blur(7px);
+    margin: 2px;
+    cursor: pointer;
+}
+/* box area  */
+#boxarea{
+    display: block;
+}
+#loader{
+    background-color: rgb(54, 106, 251,0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: Consolas, Menlo, Monaco, monospace;
+    font-weight: bold;
+    font-size: 3rem;
+    opacity: 0.8;
+    width: 150vw;
+    height: 160vh;
+    z-index: 100;
+}
+#load{
+    position: absolute;
+    top: 50vh;
+    left: 48vw;
+
+}
+#loader span {
+    -webkit-animation: pulse 0.4s alternate infinite ease-in-out;
+            animation: pulse 0.4s alternate infinite ease-in-out;
+  }
+#loader span:nth-child(even) {
+    -webkit-animation-delay: 0.4s;
+            animation-delay: 0.4s;
+            margin: 20px;
+  }
+@keyframes pulse {
+    from{
+        transform: scale(1.5);
+        opacity: 1;
+    }
+    to{
+      transform: scale(1);
+      opacity: 0.5;
+    }
+  }
+/* main container */
+#container{
+    margin: 15px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* puzzle area  */
+#boxarea{
+    position: relative;
+}
+
+/* move and time monitors area*/
+#monitor{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+#monitor4{
+    transition: all 0.5s ease 0s;
+}
+
+#options1, #options2{
+    background-color: rgb(81, 180, 233);
+    color: white;
+    margin: 12px;
+    border-radius: 18px;
+    font-size: 1.2rem;
+    transition: all 0.5s ease 0s;
+}
+
+/* toggle bar FULL area  */
+
+#bar::before{
+    content: "";
+    background-color: rgb(44, 43, 43);
+
+    /* position  */
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    height: 50px;
+    width: 150%;
+
+     /* below content  */
+    z-index: -2;
+}
+#op{
+    position: relative;
+    top: 8px;
+    left: 10px;
+}
+/* #op > details{
+    color: red;
+} */
+#op-full{
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    display: grid;
+    grid-template-rows: 3;
+    align-items: center;
+    padding-bottom: 10px;
+    /* width: min-content; */
+    /* padding: 30px; */
+    z-index: 10;
+    animation: opanimate 0.4s ease-in 0s;
+}
+@keyframes opanimate {
+    0%{
+        transform: translateX(-30px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+#bar{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.toggle-bar{
+    display: flex;
+    flex-flow: row wrap;
+    /* justify-content: left; */
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 12px;
+    /* background: rgba(0, 0, 0, 0.6);
+    border: 0.5px solid white;
+    backdrop-filter:blur(7px); */
+}
+
+#allopt{
+    display: inline-block;
+}
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: rgb(212, 208, 208);
+    margin: 6px 0;
+    cursor: pointer;
+    transition: 0.6s;
+}
+/* Rotate first bar */
+.changer .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+  }
+  
+  /* Fade out the second bar */
+.changer .bar2 {
+    opacity: 0;
+  }
+  
+  /* Rotate last bar */
+.changer .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+  }
+
+.sider{
+    display: inline-block;
+    cursor: pointer;
+}
+
+.buttonareaDeep
+{
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 50px;
+    height: 25px;
+    padding: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    background-color: white;
+    border-radius: 15px;
+    border: 1px solid black;
+    transition: all 1.2s ease 0s;
+}
+.buttonDeep{
+    height: 24px;
+    width: 23px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 14px;
+    transition: all 1s ease 0s;
+    transform:translateX(0px);
+}
+
+/* instruction area  */
+#howto{
+    transition: all 0.5s ease 0s;
+    margin-bottom: 10px;
+}
+
+/* logo area  */
+#logo img{
+    /* display: inline-block; */
+    height: 20px;
+    margin-top: 16px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+/* footer area  */
+footer{
+    background-color: black;
+    color: white;
+    font-size: 1.1rem;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    /* position: absolute; */
+    /* top: 120%; */
+    /* width: 100%; */
+}
+.footlogo{
+    display: inline-block;
+    margin-left: 15px;
+}
+.footlogo a{
+    color: white;
+    text-decoration: none;
+}
+
+
+ /* =================================================================
+ TRASH CODES FOR TESTING PURPOSES */
+
+/* body::after{
+    content: "";
+    background:rgb(0, 148, 228);
+    background:rgb(50, 50, 51);
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 110%;
+    width: 120%;
+
+    
+    z-index: -3;
+
+    transition: all 1.2s ease 0s;
+} */
+
+/* keyframes  */
+/* @keyframes moveright {
+    0%{
+        tranfo
+    }
+} */
+
