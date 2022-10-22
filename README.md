@@ -18,4 +18,4 @@ Following languages have been used
 
 ## Licence
 
-The code is `MIT Licence`
+The code is under `MIT Licence`. You can refer the `LICENCE` for more details.
