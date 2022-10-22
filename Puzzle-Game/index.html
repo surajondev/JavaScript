@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>puzzle</title>
+    <link rel="stylesheet" href="css/game.css">
+    <link rel="stylesheet" href="css/gameinphone.css" media="screen and (max-width:700px)">
+    <link rel="stylesheet" href="css/gameonphone2.css" media="screen and (max-width:500px)">
+</head>
+<div id="loader">
+    <div id="load">
+        <span>{</span><span>}</span>
+    </div>
+</div>
+<body>
+    <nav id="bar">
+        <div id="op">
+            <details >
+                <summary onclick="changebars()">
+                    <div id="allopt">
+                        <div class="sider">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <div class="bar3"></div>
+                        </div>     
+                    </div>
+                </summary onmouseout="autoclose()">
+                <div id="op-full">
+                <div class="toggle-bar">
+                    Dark-mode:
+                    <div id="buttonarea" class="buttonareaDeep">
+                        <div id="button" class="buttonDeep">
+        
+                        </div>
+                    </div>
+                </div>
+                <div class="toggle-bar">
+                    Challenge-mode:
+                    <div id="buttonarea2" class="buttonareaDeep">
+                        <div id="button2" class="buttonDeep">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="toggle-bar">
+                    Image-mode:
+                    <div id="buttonarea3" class="buttonareaDeep">
+                        <div id="button3" class="buttonDeep">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </details>
+        </div>
+  
+        <div id="logo">
+            <img src="img/logo.png" alt="">
+        </div>
+
+    </nav>
+    <div id="container">
+        <h4 style="text-align: center;">Arrange the boxes in order.</h4>
+        <h4 class="glass3" style="color: rgb(2, 140, 214); background-color: white; text-align: center; " id="howto">Click to see Instructions of play</h4>
+        <h3>Your All Time Highest Score:
+            <span id="highest">NIL</span>
+        </h3>
+
+        <div id="boxarea" >
+        </div>
+        <hr style="background-color: white; height: 4px; " id="hrline">
+        <div id="monitor" class="glass2">
+            <div id="monitor1" class="glass3">
+                <span>Select matrix here:</span>
+                <select name="n" id="options1" >
+                    <option value="3" class="nval"> 3 </option>
+                    <option value="4" class="nval"selected> 4 </option>
+                    <option value="5" class="nval" > 5 </option>
+                    <option value="6" class="nval"> 6 </option>
+                </select>
+                <span>x</span>
+                <select name="n" id="options2" >
+                    <option value="3" class="nval"> 3 </option>
+                    <option value="4" class="nval" selected> 4 </option>
+                    <option value="5" class="nval" > 5 </option>
+                    <option value="6" class="nval"> 6 </option>
+                </select>
+            </div>
+            <div id="monitor2" class="glass3">
+                <span>Time:</span>
+                <span id="timer">0</span>
+            </div>
+            <div id="monitor3" class="glass3">
+                <span>Moves:</span>
+                <span id="moves">0</span>
+            </div>
+            <div id="monitor4" class="glass3" style="color: rgb(2, 140, 214); background-color: white;" >
+                Reset
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div>
+            <p>Copyright&copy;deep-sekhar.github.io 2021 &nbsp; All rights reserved </p>
+        </div>
+        <div> 
+            <span>Follow Me on:</span>
+            <span class="footlogo">
+                <a href="https://www.instagram.com/sekhharr/" target="_blank">
+                    <i class="fab fa-instagram-square fa-2x"></i>
+                </a>
+            </span>
+            <span class="footlogo">
+                <a href="https://www.facebook.com/Sekhharr/" target="_blank">
+                    <i class="fab fa-facebook-square fa-2x"></i>
+                </a>
+            </span>
+            <span class="footlogo">
+                <a href="https://discordapp.com/users/787352636416065586/" target="_blank">
+                    <i class="fab fa-discord fa-2x"></i></a>
+                </span>
+                <span class="footlogo">
+                    <a href="https://github.com/deep-sekhar" target="_blank">
+                        <i class="fab fa-github fa-2x"></i>
+                    </a>
+                </span>
+                <span class="footlogo">
+                    <a href="https://in.linkedin.com/in/deep-sekhar-ghosh-23478b208" target="_blank">
+                        <i class="fab fa-linkedin fa-2x"></i>
+                    </a>
+                </span>
+            </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+    <script src="https://kit.fontawesome.com/b0549de33d.js" crossorigin="anonymous"></script>
+</body>
+</html>

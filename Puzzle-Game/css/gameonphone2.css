@@ -1,0 +1,45 @@
+html{
+    scroll-behavior: smooth;
+    font-size: 80%;
+    font-family: 'Baloo Tammudu 2','Mirza', cursive;
+}
+.glass3{
+    border-radius: 12px;
+    background: rgb(255, 255, 255,0.1);
+    border: 0.5px solid white;
+    backdrop-filter:blur(7px);
+    margin: 4px;
+    padding: 4px;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+#container{
+    margin: 15px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    /* position: abssolute; */
+    /* left: 0pxs; */
+}
+#bar::before{
+    content: "";
+    background-color: rgb(44, 43, 43);
+
+    /* position  */
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    height: 64px;
+    width: 150%;
+
+     /* below content  */
+    z-index: -2;
+}
+#op{
+    position: relative;
+    top: 18px;
+    left: 10px;
+}
