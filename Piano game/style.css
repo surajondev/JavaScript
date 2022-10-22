@@ -1,0 +1,98 @@
+body {
+    background-color: black;
+  }
+  h1 {
+    text-align: center;
+    color: red;
+  }
+  .mydiv {
+    justify-content: center;
+  
+    display: grid;
+  
+    grid-template-rows: repeat(6, 80px);
+    grid-template-columns: repeat(6, 80px);
+    row-gap: 20px;
+    column-gap: 10px;
+  }
+  .cell {
+    background-color: white;
+  }
+  @keyframes blink {
+    from {
+      background-color: white;
+    }
+    to {
+      background-color: red;
+    }
+  }
+  .animate {
+    animation-name: blink;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+  }
+
+
+  /* @media screen and (max-width: 600px){
+    .mydiv{
+        justify-content: center;
+        left: 50%;
+        right: 50%;
+        width: 30%;
+        float: right;
+        justify-content: center;
+  
+    display: grid;
+  
+    grid-template-rows: repeat(8, 80px);
+    grid-template-columns: repeat(4, 80px);
+    row-gap: 20px;
+    column-gap: 10px;
+        
+    
+    }
+   
+  } */
+
+
+  .highscorediv{
+    justify-content: center;
+    display: grid;
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+
+  highscoretable {
+    border: 2px solid white;
+    border-collapse: collapse;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    background-color: white;
+    color: white;
+
+    
+    margin-bottom: 10px;
+  }
+  
+
+  .hide{
+    display: none;
+  }
+
+  td,
+th {
+  border: 1px solid rgb(100, 100, 100);
+  font-size: large;
+  color: white;
+}
+p{
+  font-size: large;
+  color: white;
+  text-align: center;
+
+}
+td {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
