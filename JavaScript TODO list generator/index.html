@@ -16,8 +16,17 @@
             padding: 20px;
         }
         
-        .todolist ol li {
-            padding: 10px 0;
+        .todolist {
+            padding: 10px 10px;
+            width: 100%;
+            background-color: #0984e3;
+            border-collapse: collapse;
+        }
+
+        .todolist .table td{
+            max-width: 100px;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
     </style>
 </head>
@@ -36,11 +45,22 @@
                 </div>
 
                 <div class="col-md-8 todolist">
-                    <ol id="myUL">
-                        <li>Play Cricket</li>
-                        <li>Listen Music</li>
-                        <li>Buy Groceries</li>
-                    </ol>
+                    <table id="myUL" class="table">
+                        <!-- <ol id="myUL">
+                            <li>Play Cricket</li>
+                            <li>Listen Music</li>
+                            <li>Buy Groceries</li>
+                        </ol> -->
+                        <tr>
+                            <td>Play Cricket</td>
+                        </tr>
+                        <tr>
+                            <td>Listen Music</td>
+                        </tr>
+                        <tr>
+                            <td>Buy Groceries</td>
+                        </tr>
+                    </table>
                 </div>
             </div>
         </div>
