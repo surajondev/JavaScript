@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#canvas {
+  background-color: white;
+}
+.hide {
+  display: none;
+}

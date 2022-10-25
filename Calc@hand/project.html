@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="project.css">
+    <script src="project.js"></script>  
+</head>
+<body>
+    <div class="head">
+    <h1>Calc@Hand</h1>
+</div>
+    <img src="cartoon.webp">
+        <div class="container text-center">
+ 
+        
+        <div class="calc-container">
+
+       
+            <div class="row">
+                <form name="calc">
+                <input type="text" id="entry" class="entry text-right" value="0" readonly>
+                </form>
+            </div>
+            <div class="row">
+             <button id="numbut" type="button"  onclick="numButPress(7)">7</button>
+             <button id="numbut" type="button"  onclick="numButPress(8)">8</button>
+             <button id="numbut" type="button"  onclick="numButPress(9)">9</button>
+             <button id="mathbut" type="button"  onclick="mathButPress('+')">+</button>
+            </div>
+            <div class="row">
+                <button id="numbut" type="button" onclick="numButPress(4)">4</button>
+                <button id="numbut" type="button"  onclick="numButPress(5)">5</button>
+                <button id="numbut" type="button"  onclick="numButPress(6)">6</button>
+                <button id="mathbut" type="button"  onclick="mathButPress('-')">-</button>
+               </div>
+               <div class="row">
+                <button id="numbut" type="button"  onclick="numButPress(1)">1</button>
+                <button id="numbut" type="button" onclick="numButPress(2)">2</button>
+                <button id="numbut" type="button"  onclick="numButPress(3)">3</button>
+               <button id="mathbut" type="button"  onclick="mathButPress('*')">*</button>
+               </div>
+               <div class="row">
+                <button id="numbut" type="button"  onclick="clearButPress()">AC</button>
+                <button id="numbut" type="button" onclick="numButPress(0)">0</button>
+                <button id="numbut" type="button"  onclick="numButPress('.')">.</button>
+                <button id="mathbut" type="button"  onclick="mathButPress('/')">/</button>
+            </div>
+            <div class="row">
+                <button id="numbut" type="button"  onclick="copyButPress()">MC</button>
+                <button id="numbut" type="button"  onclick="pasteButPress()">MP</button>
+                <button id="equalbut" type="button"  onclick="equalButPress()">=</button>
+            </div>
+        
+            </div>
+            </div>
+            
+
+
+           
+</body>
+</html>
