@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh);
+    font-family: 'Anonymous Pro', monospace;
+    background-color: #2b323c;
+}
+
+.box {
+    
+    color: rgba(255, 255, 255, .75);
+    font-size: 180%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#typed{
+    color: #24bcff;
+    font-weight: bold;
+}
