@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Screen Image Slider - Pure JavaScaript</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+</head>
+<body>
+    <!-- Slider -->
+    <div class="slider">
+        <!-- Radio Controllers -->
+        <input type="radio" name="sld" id="sld1">
+        <input type="radio" name="sld" id="sld2">
+        <input type="radio" name="sld" id="sld3">
+        <input type="radio" name="sld" id="sld4">
+        <input type="radio" name="sld" id="sld5">
+
+        <!-- Slides -->
+        <div class="slides">
+            <!-- Slide 01 -->
+            <div class="slide curr">
+                <img src="images/brownie.jpg" alt="">
+                <div class="desc">
+                    <h2>Fudgy Brownies</h2>
+                    <p>This is my absolute favorite brownie recipe. They are rich, fudgy in the middle, and made completely from scratch. These brownies are so much better than the box, and I bet you have what you need to make them already sitting in your kitchen.</p>
+                    <a href="#">Jump to the Easy Fudgy Brownies Recipe</a>
+                </div>
+            </div>
+            <!-- Slide 02 -->
+            <div class="slide">
+                <img src="images/cheesecake.jpg" alt="">
+                <div class="desc">
+                    <h2>Choco-cheesecake</h2>
+                    <p>This straightforward chocolate cheesecake is everything you want it to be:
+                         rich, moist, dense, and hugely chocolate. Not only that — it's simple to 
+                         put together, requiring neither special ingredients, nor a fussy water bath.
+                          If you're looking for a very rich (and very chocolate) dessert, you've found it.</p>
+                    <a href="#">Jump to the<br>Easy chocolate cheesecake Recipe</a>
+                </div>
+            </div>
+            <!-- Slide 03 -->
+            <div class="slide">
+                <img src="images/chocolate-mousse.jpg" alt="">
+                <div class="desc">
+                    <h2>Cohocolote Mousse</h2>
+                    <p>Chocolate Mousse may well be the ultimate chocolate fix! Rich and creamy, yet light 
+                        and fluffy, one pot is satisfying but always leaves me wanting more…….</p>
+                    <a href="#">Jump to the<br>delicious chocolate-mousse Recipe</a>
+                </div>
+            </div>
+            <!-- Slide 04 -->
+            <div class="slide">
+                <img src="images/hotChoclote.jpg" alt="">
+                <div class="desc">
+                    <h2>Hot Chocolate</h2>
+                    <p>You sweet, creamy heavenly thing. If you were wondering how I would like to spend every 
+                        December evening, it is curled up, with my hands wrapped around a warm mug of hot chocolate. Bonus points if that hot chocolate is topped 
+                        freshly whipped cream and a heavy sprinkle of chopped dark chocolate.</p>
+                    <a href="#">Jump to the<br>tasty cup of HotChocolate Recipe</a>
+                </div>
+            </div>
+            <!-- Slide 05 -->
+            <div class="slide">
+                <img src="images/pancakechocolate.jpg" alt="">
+                <div class="desc">
+                    <h2>Chocolate Pancakes</h2>
+                    <p>Perfect chocolate pancakes are easy to make, fluffy, and topped with a rich hot chocolate
+                         sauce (not optional!). A lovely morning treat that will give all chocolate lovers a good
+                          reason to jump out of bed!.</p>
+                    <a href="#">Jump to the<br>mouthwatering Chocolate Pancake Recipe</a>
+                </div>
+            </div>
+        </div>
+        <!-- Arrow Navigation -->
+        <a href="#" class="arrow left"><i class="fa-solid fa-angles-left"></i></a>
+        <a href="#" class="arrow right"><i class="fa-solid fa-angles-right"></i></a>
+        <!-- Radio Navigation -->
+        <div class="rad-nav">
+            <label for="sld1" class="rad-btn active"></label>
+            <label for="sld2" class="rad-btn"></label>
+            <label for="sld3" class="rad-btn"></label>
+            <label for="sld4" class="rad-btn"></label>
+            <label for="sld5" class="rad-btn"></label>
+        </div>
+    </div>
+</body>
+<!-- Script -->
+<script src="script.js"></script>
+</html>
