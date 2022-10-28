@@ -1,4 +1,6 @@
 var myNodelist = document.getElementsByTagName("TR");
+var table = document.getElementsByTagName("table");
+
 var i;
 for (i = 0; i < myNodelist.length; i++) {
     var span = document.createElement("SPAN");
@@ -9,14 +11,13 @@ for (i = 0; i < myNodelist.length; i++) {
     var td2 = document.createElement("td");
     td2.appendChild(span);
     myNodelist[i].appendChild(td2);
-    // myNodelist[i].appendChild(span);
 }
 
 var close = document.getElementsByClassName("closeitem");
 var i;
 for (i = 0; i < close.length; i++) {
     close[i].onclick = function() {
-        var div = this.parentElement;
+        var div = this.parentElement.parentElement;
         div.style.display = "none";
     }
 }
@@ -52,12 +53,11 @@ function newElement() {
     li.appendChild(td1);
     li.appendChild(td2);
 
+
     for (i = 0; i < close.length; i++) {
         close[i].onclick = function() {
-            var div = this.parentElement;
+            var div = this.parentElement.parentElement;
             div.style.display = "none";
-            var tr = this.parentElement.parentElement;
-            document.getElementById("myUL").removeChild(tr);
         }
     }
 }
