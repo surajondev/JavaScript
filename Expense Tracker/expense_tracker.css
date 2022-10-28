@@ -1,0 +1,102 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+    font-family: 'Open Sans', sans-serif;
+}
+.full_body{
+    
+    font-size:18px;
+    background-image: linear-gradient(to right top, #1b92ac, #00aeb2, #00c7a3, #6fdd83, #c1ec5f);
+    height:600px;
+    
+}
+.title{
+    color:white;
+    font-size:30px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:30px;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    margin:100px;
+}
+.buttons{
+    outline:none;
+    border:none;
+    padding:10px 20px;
+    color:white;
+    background-color: rgb(223, 60, 60);
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size:18px;
+    border-radius: 4px;
+}
+table{
+    background-color: rgba(0, 0, 0, 0.164);
+    color:white;
+    border:1px solid white;
+    margin-top:30px;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 4px;
+}
+td{
+    font-size:15px;
+}
+.add-new-expense,.add-category{
+    margin-top:50px;
+    background-color:rgb(175, 224, 41);
+    padding:10px;
+    border-radius:4px;
+    border:1px solid grey;
+    display:none;
+}
+.add-new-expense span,.add-category span{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:5px 0px;
+    font-size:15px;
+}
+.form-input{
+    background-color:rgba(0, 0, 0, 0.164);
+    padding:8px 10px;
+    border:1px solid white;
+    border-radius: 4px;
+    color:white;
+    font-family: 'Open Sans', sans-serif;
+}
+.form-input:focus{
+    background-color:rgba(0, 0, 0, 0.164);
+    border:1px solid white;
+    outline:none;
+    font-family: 'Open Sans', sans-serif;
+}
+.available-categories{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding:15px;
+    border:1px solid white;
+    background-color:rgba(0, 0, 0, 0.164);
+    color:white;
+    font-size:18px;
+    margin-top:30px;
+    border-radius: 4px;
+}
+.available-categories > span{
+    padding:8px 10px;
+    border-bottom: 1px solid white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sub-title{
+    font-size:23px;
+    color:white;
+    margin-top:30px;
+}
