@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Note App</title>
+</head>
+<body>
+
+    <!--Header-->
+    <header>
+        <div class="logo">
+            <h2>Note App</h2>
+        </div>
+        <div class="search">
+            <input type="text" id="srch" placeholder="Search a Note...">
+        </div>
+    </header>
+
+    <!--Container-->
+    <div class="container" id="con-body">
+        <!--Input Form-->
+        <div class="inp-frm">
+            <form action="" id="add-frm">
+                <h3>Add a Note</h3>
+                <input type="text" id="n-title" placeholder="Title...">
+                <textarea name="" id="n-body" placeholder="Note Body..."></textarea>
+                <button type="submit" id="save">Save</button>
+                <button type="reset" id="reset">Reset</button>
+            </form>
+        </div>
+        <!--Table-->
+        <div class="table" id="tbl-div">
+            <table id="items">
+                <tr>
+                    <th>Title</th>
+                    <th>View</th>
+                    <th>Delete</th>
+                </tr>
+                <!-- Delete the dummy notes after create js)
+                <tr>
+                    <td>Note 01</td>
+                    <td class="btcellv">
+                        <button>View</button>
+                    </td>
+                    <td class="btcelld">
+                        <button>Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Note 02</td>
+                    <td class="btcellv">
+                        <button>View</button>
+                    </td>
+                    <td class="btcelld">
+                        <button>Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Note 03</td>
+                    <td class="btcellv">
+                        <button>View</button>
+                    </td>
+                    <td class="btcelld">
+                        <button>Delete</button>
+                    </td>
+                </tr>
+                -->
+            </table>
+        </div>
+    </div>
+
+    <!--External Script-->
+    <script src="./main.js"></script>
+
+</body>
+</html>
