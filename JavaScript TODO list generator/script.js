@@ -1,5 +1,7 @@
 var myNodelist = document.getElementsByTagName("TR");
-var table = document.getElementsByTagName("table");
+var table = document.getElementById('myUL');
+table.classList.add('table');
+console.log(table.classList)
 
 var i;
 for (i = 0; i < myNodelist.length; i++) {
@@ -22,9 +24,9 @@ for (i = 0; i < close.length; i++) {
     }
 }
 
-var list = document.querySelector('ul');
+var list = document.querySelector('tr');
 list.addEventListener('click', function(ev) {
-    if (ev.target.tagName === 'LI') {
+    if (ev.target.tagName === 'TR') {
         ev.target.classList.toggle('checked');
     }
 }, false);
@@ -52,7 +54,8 @@ function newElement() {
 
     li.appendChild(td1);
     li.appendChild(td2);
-
+    table.appendChild(li);
+    
 
     for (i = 0; i < close.length; i++) {
         close[i].onclick = function() {
@@ -60,4 +63,5 @@ function newElement() {
             div.style.display = "none";
         }
     }
+  
 }
