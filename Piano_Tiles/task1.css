@@ -1,0 +1,53 @@
+*{
+background-color: rgb(94, 28, 156);
+}
+
+
+.head-title{
+   /* background-color: crimson;*/
+    font-size: x-large;
+    text-align: center;
+    width:100%;
+    height:100% ;
+    background-image: linear-gradient(rgb(133, 16, 113),rgb(131, 12, 12));
+
+
+}
+
+#playBtn{
+    background: linear-gradient(rgb(133, 16, 113),rgb(131, 12, 12));
+    height: 25px;
+    width:65px;
+    position :absolute;
+    left:625px;
+    top:500px;
+    border-radius: 20%;
+}
+#playBtn:hover{
+    background-color: darkcyan;
+    border-radius: 40%;
+}
+.main-box{
+    position:absolute;
+    left:505px;
+    top:135px;
+    
+}
+.box{
+    width:80px;
+    height:80px;
+    background-color:chartreuse;
+    border-radius:20%;
+    border: solid black 1px;
+}
+
+/*.box:hover{
+    background-color: violet;
+    border-radius:40%;
+}*/
+.lightTile{
+    background-color: darkcyan;
+}
+.lightTile:hover{
+    border-radius:30%;
+}
