@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
     <style>
+        .container{
+            align-items: center;
+            justify-content: center;
+        }
         .input-box {
             display: flex;
             align-items: center;
@@ -20,13 +24,20 @@
             padding: 10px 10px;
             width: 100%;
             background-color: #0984e3;
-            border-collapse: collapse;
+
         }
 
         td{
             max-width: 300px;
             overflow: hidden;
             text-overflow: ellipsis;
+        }
+
+        @media screen and (max-width: 800px){
+            td{
+                max-width: 200px;
+                overflow: hidden;
+            }
         }
     </style>
 </head>
@@ -45,7 +56,7 @@
                 </div>
 
                 <div class="col-md-8 todolist">
-                    <table id="myUL" class="table">
+                    <table id="myUL">
                         <!-- <ol id="myUL">
                             <li>Play Cricket</li>
                             <li>Listen Music</li>
