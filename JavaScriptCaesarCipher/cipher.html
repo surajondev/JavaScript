@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Caesar Cipher</title>
+        <link rel = "stylesheet" href = "style.css">
+        <script src = "script.js" defer></script>
+    </head>
+    <body>
+        <div class = "container">  
+            <h1>Encrypting by caesar cipher</h1>
+                <input id = "plain-text" type = "text" placeholder = "Enter the plain text">
+                <input id = "key" type = "number" placeholder = "Enter the key/shift amount">
+            <button onclick = "Encrypt()">Encrypt</button>
+                
+            <div class = "cipheredText">
+                <h4>Encrypted text: </h4>
+                <div id = "encrypted-text"></div>
+            </div>
+        </div>
+    </body>
+</html>
