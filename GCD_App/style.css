@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+/* base styles */
+* {
+  font-family: "Quicksand";
+  color: #333;
+  text-align: center;
+}
+
+.GCD h1 {
+    color: #333;
+}
+
+.GCD .input p {
+    color:deeppink;
+    font-size: larger;
+    margin-top: 50px;
+}
+
+.GCD button {
+    margin-top: 50px;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    border: 0;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 1px solid deeppink;
+}
+
+.GCD button:hover {
+    box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+    background-color: #f1356d;
+    color: #fff;
+}
+
+.GCD .output {
+    text-align: left;
+    font-weight: normal;
+}
+
+.GCD .output h4 {
+    margin-top: 50px;
+    font-weight: normal;
+}
