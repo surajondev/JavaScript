@@ -6,7 +6,7 @@ const messageInput = document.getElementById('messageInp')
 const messageContainer = document.querySelector(".container")
 
 
-var audio = new Audio('ring.mp3');
+let audio = new Audio('ring.mp3');
 
 //function which will append event info to the container
 const append = (message , position)=>{
