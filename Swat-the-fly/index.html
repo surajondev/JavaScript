@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swat the Fly </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">SWAT THE FLY..</div>
+     
+    <div class="gamecontainer">
+        <div class="scorebox">
+            <div id="score" class="details">Score: 0</div>
+            <div id="lives" class="details">Lives: 3</div>
+            <div id="time" class="details">Time:3</div>
+            <div id="user" class="details"></div>
+            <button id="pause" onclick="pause()">Pause</button>
+        </div>
+      
+        <div id="gamebox"> 
+            <img src="fly.png" alt="fly" id="fly">
+        </div>
+    </div>
+
+
+<div id="overlay" class="overlay">
+    <button id="startoverlay" onclick="start()">Start</button>
+</div>
+
+<div id="gameoverlay" class="gameoverlay">
+    <h1>Game Over!</h1>
+    <div class="scorelay">Score: 0</div>
+    <button id="playagain" onclick="location.reload()">Click to Play Again</button>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
