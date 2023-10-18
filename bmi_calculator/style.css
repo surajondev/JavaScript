@@ -6,7 +6,8 @@
 
 body {
     font-family:'Roboto', sans-serif !important;
-    background: #A8DF8E;
+    background: rgb(16,227,65);
+    background: radial-gradient(circle, rgba(16,227,65,0.9585084033613446) 11%, rgba(0,138,92,1) 83%);
 }
 
 .container {
@@ -15,5 +16,35 @@ body {
     padding: 40px 30px 70px;
     background-color: #1D5D9B;
     margin: 170px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+.container h2 {
+    margin-bottom: 30px;
+    font-size: 40px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.container #fnum1,#fnum2{
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 20px 0px 20px 15px;
+    border-radius: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+}
+
+.container button {
+    margin-top: 20px;
+    padding: 15px 50px;
+    font-size: 15px;
+    font-weight: 900;
+    letter-spacing: .1em;
+    cursor: pointer;
+    background: linear-gradient(to right, #FFC67F , #FDACAB);
+}
