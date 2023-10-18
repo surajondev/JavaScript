@@ -1,0 +1,61 @@
+body {
+    background-color: black;
+  }
+#rock {
+    width: 108px;
+    height: 108px;
+    overflow: hidden;
+  }
+  img {
+    width: 99px;
+    height: 99px;
+  }
+  .gallery {
+    display: inline-flex;
+  }
+  .element2 {
+    width: 109px;
+    margin-left: 29px;
+    padding: 2px;
+  }
+  #paper {
+    width: 108px;
+    height: 108px;
+    overflow: hidden;
+  }
+  .element3 {
+    width: 109px;
+    margin-left: 29px;
+    padding: 3px;
+  }
+  #cut {
+    width: 108px;
+    height: 108px;
+    overflow: hidden;
+  }
+  .container {
+    margin-top: 321px;
+    margin-left: 702px;
+    height: 109px;
+    width: 62%;
+    display: block;
+  }
+  #strt {
+    text-align: center;
+  }
+  .temp {
+    margin-top: 19px;
+    height: 48px;
+    color: white;
+font-weight: bold;
+  }
+  #red {
+    margin-left: 849px;
+    width: 111px;
+    height: 111px;
+    overflow: hidden;
+    border-radius: 100%;
+  }
+  .element1 {
+    padding: 2px;
+  }
