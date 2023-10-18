@@ -20,11 +20,10 @@ const options = {
 try {
 	const response = await fetch(url, options);
 	const result = await response.json();
-	console.log(result);
-    p0.innerText = String(result.weather[0].main);
-    p1.innerText = "Temp : " + String(result.main.temp) + "'";
-    p2.innerText = "Min Temp : " + String(result.main.temp_min) + "'";
-    p3.innerText = "Max Temp : " + String(result.main.temp_max) + "'";
+        p0.innerText = String(result.weather[0].main);
+        p1.innerText = "Temp : " + String(result.main.temp) + "'";
+        p2.innerText = "Min Temp : " + String(result.main.temp_min) + "'";
+        p3.innerText = "Max Temp : " + String(result.main.temp_max) + "'";
 } catch (error) {
 	console.error(error);
 }
