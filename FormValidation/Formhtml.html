@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Register Form</title>
+    <link rel="stylesheet" href="FormCss.css">
+</head>
+<body>
+<div class="form-body">
+        <div class="row">
+            <div class="form-holder">
+                <div class="form-content">
+                    <div class="form-items">
+                        <h3>Register Today</h3>
+                        <p>Fill in the data below.</p>
+                        <form class="requires-validation" id="requires-validation" method="POST">
+
+                            <div class="col-md-12">
+                               <input class="form-control" type="text" name="Name" id="Name" placeholder="Full Name" required>
+                            </div>
+
+                            <div class="col-md-12">
+                                <input class="form-control" type="email" name="email" id="email" placeholder="E-mail Address" required>
+                            </div>
+
+                            <div class="col-md-12">
+                                <select class="form-select mt-3" name="position" id="position" required>
+                                      <option selected disabled value="">Position</option>
+                                      <option value="jweb">Junior Web Developer</option>
+                                      <option value="sweb">Senior Web Developer</option>
+                                      <option value="pmanager">Project Manager</option>
+                               </select>
+                           </div>
+
+                           <div class="col-md-12">
+                              <input class="form-control" type="password" name="password" id="password" placeholder="Password" required>
+                           </div>
+
+                           <!-- Confirm Password Field -->
+                           <div class="col-md-12">
+                              <input class="form-control" type="password" name="confirm_password" id="confirm_password" placeholder="Confirm Password" required>
+                           </div>
+
+                           <div class="col-md-12 mt-3">
+                            <label class="mb-3 mr-1" for="gender">Gender: </label>
+
+                            <input type="radio" class="btn-check" name="gender" id="male" autocomplete="off" required>
+                            <label class="btn btn-sm btn-outline-secondary" for="male">Male</label>
+
+                            <input type="radio" class="btn-check" name="gender" id="female" autocomplete="off" required>
+                            <label class="btn btn-sm btn-outline-secondary" for="female">Female</label>
+
+                            <input type="radio" class="btn-check" name="gender" id="secret" autocomplete="off" required>
+                            <label class="btn btn-sm btn-outline-secondary" for="secret">Secret</label>
+                           </div>
+
+                           <div class="form-check">
+                              <input class="form-check-input" type="checkbox" name="confirm" id="confirm" required>
+                              <label class="form-check-label" name="confirm" id="confirm">I confirm that all data are correct</label>
+                           </div>
+
+                            <div class="form-button mt-3">
+                                <button id="submit" type="submit" class="btn btn-primary">Register</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="jquery-3.7.0.js"></script>
+    <script src="jquery.validate.min.js"></script>
+    <script src="FormValidation.js"></script>
+</body>
+</html>
