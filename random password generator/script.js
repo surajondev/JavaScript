@@ -79,7 +79,7 @@ function getRandomSymbol() {
 
 function showText()
 {
-var header = $('#copyTxt');
+let header = $('#copyTxt');
 header.addClass('active');
 setTimeout(function() {
     header.removeClass('active');
