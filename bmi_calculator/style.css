@@ -48,3 +48,10 @@ body {
     cursor: pointer;
     background: linear-gradient(to right, #FFC67F , #FDACAB);
 }
+
+.result {
+    margin-top: 40px;
+    color: #ffff;
+    font-weight: bold;
+    font-size: 30px;
+}
