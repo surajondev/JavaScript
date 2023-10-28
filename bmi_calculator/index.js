@@ -8,7 +8,6 @@ function updater(){
         alert("Please fill all the fields");
         }else {
             let bmi = (parseInt(weight)) / (parseInt(height * height) / 10000);
-            (weight / ((height * height)/ 10000))
             document.querySelector(".result").innerHTML= "Your BMI is: "+ bmi.toFixed(2);
             //document.getElementById('submit').disabled = false;
             };
