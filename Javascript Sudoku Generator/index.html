@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sudoku Generator</title>
+    <style>
+        #board {
+            display: grid;
+            grid-template-columns: repeat(9, 1fr);
+            grid-template-rows: repeat(9, 1fr);
+            gap: 1px;
+            border: 1px solid black;
+            }
+
+        .cell {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            font-weight: bold;
+            cursor: pointer;
+            }
+
+        .cell.selected {
+            background-color: lightblue;
+            }
+
+        .cell.incorrect {
+            background-color: pink;
+            }
+
+        .cell.correct {
+            background-color: lightgreen;
+            }
+    </style>
+  </head>
+  <body>
+    <h1>Sudoku Generator</h1>
+    <div id="board"></div>
+    <button id="generate">Generate New Puzzle</button>
+    <script src="script.js"></script>
+  </body>
+</html>

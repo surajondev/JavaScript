@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Karla"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="headings">
+        <h2 id="heading-1">Generate a</h2>
+        <h2 id="heading-2">random password</h2>
+        <p id="caption">Never use an insecure password again.</p>
+        <button id="btn" onclick="generatePassword()">Generate Password</button>
+        
+        <input type="number" class="pass" id="length" placeholder="Enter Password Length" min="10" max="20" value="10"/>
+        <hr />
+
+        <div id="mini-container">
+          <table>
+            <tr>
+              <td>
+                <input type="text" class="pass" id="pass-1" value=" " />
+              </td>
+
+              <td>
+                <input type="text" class="pass" id="pass-2" value=" " />
+              </td>
+            </tr>
+          </table>
+        </div>
+        
+      </div>
+    </div>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>

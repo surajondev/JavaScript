@@ -1,0 +1,101 @@
+.names {
+    display: inline-flex;
+    padding: 3px;
+    margin-left: 718px;
+    width: 407px;
+    height: 106px;
+  }
+  #ken {
+    margin-left: 115px;
+    font-size: 41px;
+  }
+  #ryu {
+    font-size: 41px;
+  }
+  .gallery {
+    margin-left: 470px;
+    width: 74%;
+  }
+  #imgs1 {
+    width: 534px;
+  }
+  #imgs2 {
+    width: 277px;
+  }
+  #vs {
+    height: 1px;
+    margin-top: 48px;
+    margin-left: 89px;
+  }
+  .match {
+    display: block;
+
+  }
+  .row1 {
+    margin-left: 643px;
+    display: inline-flex;
+  }
+  #btn11 {
+    width: 81px;
+    height: 39px;
+    background-color: #10ec10;
+    color: white;
+    font-weight: bold;
+    margin-left: 3px;
+  }
+  #d {
+    margin-left: 330px;
+  }
+  #btn12 {
+    margin-left: 10px;
+    width: 81px;
+    height: 39px;
+    background-color: #f92020;
+    color: white;
+    font-weight: bold;
+  }
+  .controls {
+    height: 120px;
+    margin-top: 20px;
+  }
+  .row2 {
+    margin-left: 645px;
+    margin-top: 22px;
+    display: inline-flex;
+  }
+  #btn21 {
+    width: 81px;
+    height: 39px;
+    background-color: #10ec10;
+    color: white;
+    font-weight: bold;
+    margin-left: 3px;
+  }
+  #btn22 {
+    margin-left: 11px;
+    width: 81px;
+    height: 39px;
+    background-color: #f92020;
+    color: white;
+    font-weight: bold;
+  }
+  #kenscore {
+    margin-left: 385px;
+  }
+  .scores {
+    display: inline-flex;
+    margin-left: 681px;
+    font-size: 32px;
+  }
+  .result {
+    text-align: center;
+    margin-top: 28px;
+    font-size: 33px;
+  }
+  #reset {
+    width: 87px;
+    height: 41px;
+    background-color: orange;
+    color: white;
+    font-size: 17px;
+  }

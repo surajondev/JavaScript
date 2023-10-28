@@ -1,0 +1,48 @@
+.container {
+    height: 853px;
+  }
+  .inputs {
+    text-align: center;
+    padding: 6px;
+    width: 535px;
+    margin-left: 643px;
+  }
+  #city {
+    width: 296px;
+    height: 37px;
+  }
+  #search {
+    margin-top: 15px;
+    width: 117px;
+    height: 59px;
+    background-color: #292121;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  p#p0 {
+    font-size: 38px;
+    font-weight: bold;
+}
+  h1 {
+    color: #95952a;
+  }
+  .result {
+    text-align: center;
+    margin-top: 34px;
+    border: 1px solid;
+    width: 360px;
+    margin-left: 735px;
+    height: 434px;
+  }
+  .Cityname {
+    padding: 2px;
+    background-color: #d3d0d0;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .temps {
+    margin-top: 51px;
+   font-size: 19px;
+  }
