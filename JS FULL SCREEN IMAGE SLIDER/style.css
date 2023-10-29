@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;1,100&display=swap');
+
+/* -----RESET------- */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+/* -------Common------ */
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: #F4A460;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+/* ----------Slider------ */
+.slider{
+    width: 100%;
+    height: 100%;
+}
+
+.slider .slides{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+    
+}
+
+/* Slide */
+.slider .slides .slide{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    display: flex;
+    transition: all 0.5s ease-in;
+}
+
+.slider .slides .curr{
+    opacity: 1;
+}
+
+/* Overlay */
+.slider .slides .slide::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.4;
+    z-index: 1;
+
+}
+
+/* Images */
+.slides .slide img{
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    transform: scale(0.8);
+    transition: all 0.5s ease-in;
+}
+
+.slides .curr img{
+    transform: scale(1);
+}
+
+/* Description */
+.slides .slide .desc{
+    position: absolute;
+    max-width: 700px;
+    min-width: 550px;
+    top: -50px;
+    left: 150px;
+    transform: translateY(50%);
+    z-index: 2;
+    padding: 25px;
+    transition: all 0.5s ease-in;
+}
+
+.slides .curr .desc{
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.slides .desc h2{
+    font-size: 5rem;
+    color: #fff;
+    line-height: 5rem;
+}
+
+.slides .desc p{
+    font-size: 1rem;
+    margin:25px 0px;
+    color: #fff;
+    line-height: 1.2rem;
+}
+
+.slide .desc a{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #CD853F;
+    padding: 20px 50px;
+    transition: all 0.3s ease-in;
+}
+
+.slide .desc a:hover{
+    background-color: black;
+    color: #fff;
+    border-radius: 10px;
+}
+
+/* ----Navigation Arrows---- */
+.slider .arrow{
+    position: absolute;
+    text-decoration: none;
+    z-index: 20;
+    color: #fff;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.5;
+    transition: all 0.3s ease-in;
+}
+
+.slider .arrow:hover{
+    opacity: 1;
+}
+
+.slider .arrow i{
+    font-size: 3rem;
+}
+
+.slider .left{
+    left: 70px;
+}
+
+.slider .right{
+    right: 70px;
+}
+
+/* ---------Radio Navigation--------- */
+.slider .rad-nav{
+    width: 100%;
+    position: fixed;
+    bottom: 20px;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider .rad-nav .rad-btn{
+    width: 25px;
+    height: 25px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    margin: 0px 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+
+.slider .rad-nav .rad-btn:hover{
+    background-color: #fff;
+    border-radius: 30%;
+}
+
+.active{
+    background-color: #fff;
+}
+
+/* ----Responsive---- */
+@media(max-width: 1100px){
+    /* Slide Description */
+    .slides .slide .desc{
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+
+    .slides .curr .desc{
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media(max-width: 800px){
+    /* Slide Description */
+    .slides .slide .desc{
+        width: 70%;
+        min-width: 200px;
+    }
+
+    .slide .desc h2{
+        font-size: 2.5rem;
+        line-height: 2.8rem;
+    }
+
+    slide .desc a{
+        font-size: 0.8rem;
+        pad: 10px 30px;
+    }
+
+    .slider .arrow i{
+        font-size: 2rem;
+    }
+
+    .slider .left{
+        left: 30px;
+    }
+    
+    .slider .right{
+        right: 30px;
+    }
+}
+
+@media(max-width: 400px){
+    /* Slide Description */
+    .slides .slide .desc{
+        width: 50%;
+        min-width: 100px;
+    }
+
+    .slide .desc h2{
+        font-size: 2rem;
+        line-height: 2.3rem;
+    }
+
+    .slide .desc p{
+        font-size: 0.8rem;
+    }
+
+    .slide .desc a{
+        font-size: 0.8rem;
+        padding: 5px 5px;
+    }
+
+    .slider .arrow i{
+        font-size: 1.5rem;
+    }
+    
+    .slider .left{
+        left: 15px;
+    }
+    
+    .slider .right{
+        right: 15px;
+    }
+
+    .slider .rad-nav .rad-btn{
+        width: 15px;
+        height: 15px;
+        border: 1px solid #fff;
+        margin: 0px 10px;
+       
+    }
+}

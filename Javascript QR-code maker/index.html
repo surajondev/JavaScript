@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QR-Code Maker</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <!-- google fond -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <section class="main_section">
+      <h1>QR-Code Maker 🔢</h1>
+
+      <form class="create_qr" id="form">
+        <input
+          type="text"
+          placeholder="Add Text Here..."
+          id="qrcode"
+          class="input"
+        />
+        <button class="button" type="submit">Create</button>
+      </form>
+
+      <img
+        src="https://play-lh.googleusercontent.com/ufwUy4SGVTqCs8fcp6Ajxfpae0bNImN1Rq2cXUjWI7jlmNMCsXgQE5C3yUEzBu5Gadkz"
+        alt="qrcode"
+        id="image"
+      />
+      <a
+        href="https://play-lh.googleusercontent.com/ufwUy4SGVTqCs8fcp6Ajxfpae0bNImN1Rq2cXUjWI7jlmNMCsXgQE5C3yUEzBu5Gadkz"
+        download
+        id="link"
+      >
+        <button>Download</button>
+      </a>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,96 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Lexend", sans-serif;
+  color: rgb(38, 38, 38);
+}
+
+.main_section {
+  text-align: center;
+  margin: 60px auto;
+  width: 650px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main_section h1 {
+  margin: 60px 0 70px;
+  font-size: 42px;
+}
+.create_qr {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.create_qr input {
+  padding: 12px 20px;
+  font-size: 18px;
+  border-radius: 6px;
+  border: 3px solid rgb(76, 87, 253);
+  outline: none;
+  margin-right: 12px;
+  width: 100%;
+}
+.main_section button {
+  border: none;
+  outline: none;
+  padding: 13px 20px;
+  border-radius: 4px;
+  background-color: rgb(76, 87, 253);
+  color: white;
+  font-size: 18px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+.main_section button:hover {
+  transform: scale(1.1);
+}
+.main_section img {
+  width: 400px;
+  border: 1px solid rgb(218, 218, 218);
+  margin: 60px 0px 50px;
+  border-radius: 4px;
+}
+
+/**************** medium device *************/
+@media screen and (max-width: 700px) {
+  .main_section h1 {
+    margin-top: 40px;
+    font-size: 32px;
+  }
+  .main_section {
+    width: 500px;
+  }
+  .create_qr input {
+    font-size: 16px;
+  }
+  .main_section button {
+    font-size: 16px;
+  }
+  .main_section img {
+    width: 350px;
+  }
+}
+
+/**************** Small device *************/
+@media screen and (max-width: 550px) {
+  .main_section h1 {
+    margin-top: 40px;
+    font-size: 30px;
+    line-height: 45px;
+  }
+  .main_section {
+    width: 95%;
+  }
+  .create_qr input {
+    font-size: 14px;
+  }
+  .main_section button {
+    font-size: 14px;
+  }
+  .main_section img {
+    width: 80%;
+  }
+}

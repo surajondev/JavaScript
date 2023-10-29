@@ -1,0 +1,18 @@
+
+#result img:hover{
+    cursor: pointer;
+}
+
+
+body{
+    background-color: #131320;
+    background-size: cover;
+    background-blend-mode: darken;
+    background: rgba(22, 191, 186, 0.7) url("https://images.unsplash.com/photo-1440404653325-ab127d49abc1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fG1vdmllfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=700&q=60");
+}
+
+#submit:hover{
+    color: antiquewhite;
+    background-color: #131320;
+
+}

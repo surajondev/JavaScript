@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card hover</title>
+</head>
+<link rel="stylesheet" href="style.css">
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="content">
+                <h2>01</h2>
+                <h3>card one</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste magnam rerum repellat labore
+                    reprehenderit minus nobis totam eos molestias quasi!</p>
+                <a href="#">read more</a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="card">
+                <div class="content">
+                    <h2>02</h2>
+                    <h3>card two</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste magnam rerum repellat labore
+                        reprehenderit minus nobis totam eos molestias quasi!</p>
+                    <a href="#">read more</a>
+                </div>
+            </div>
+            <div class="container">
+                <div class="card">
+                    <div class="content">
+                        <h2>03</h2>
+                        <h3>card three</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste magnam rerum repellat labore
+                            reprehenderit minus nobis totam eos molestias quasi!</p>
+                        <a href="#">read more</a>
+                    </div>
+                </div>
+            </div>
+            <script type="text/javascript" src="vanilla-tilt.js"></script>
+            <script>VanillaTilt.init(document.querySelectorAll(".card"), {
+                    max: 25,
+                    speed: 400,
+                    glare: true,
+                    "max-glare": 1
+                });</script>
+</body>
+
+</html>

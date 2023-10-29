@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(135deg, #153677, #4e085f);
+    padding: 10px;
+}
+
+.todo-app{
+    width: 100%;
+    /* Yes we need to define a default width even with max or min width otherwise what will be its size inside the min or max width values */
+    max-width: 540px;
+    background: #fff;
+    margin: 100px auto 20px;
+    /* margin left and right auto sets equal margins on left and right thus bringing the object to center */
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+
+.todo-app h2{
+    color: #002765;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 15px;
+}
+
+.todo-app img{
+    width: 30px;
+    margin-left: 15px;
+}
+    
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+.row input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-weight: 14px;
+    min-width: 150px;
+}
+
+.row button{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    color: #fff;
+    background-color: #ff5945;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    /* Learn about user-select */
+    cursor: pointer;
+    position: relative;
+}
+
+ul li::before{
+    content: '';
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(./images/unchecked.png);
+    background-size: cover;
+    position: absolute;
+    top: 12px;
+    left: 8px;
+    /* Study about postioning properties */
+}
+
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li.checked::before{
+    background-image: url(./images/checked.png);
+}
+
+/* Adding css for the span tag created using JS */
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+}
+
+ul li span:hover{
+    background-color: #edeef0;
+    border-radius: 50%;
+}
+
+@media (width < 500px){
+
+    ul li{
+        font-size: 15px;
+    }
+
+    ul li::before{
+        height: 25px;
+        width: 25px;
+    }
+
+    .row button{
+        font-size: 12px;
+        width: 30px;
+        display: flex;
+        justify-content: center;
+    }
+}

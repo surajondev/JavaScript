@@ -1,0 +1,23 @@
+.timeNow{
+    color: #f7ea00;
+    font-size: 3.5rem;
+    /* width: 100vh; */
+    font-family: 'Rajdhani', sans-serif;
+    margin: 2rem;
+    /* padding: 0.6rem; */
+    margin-bottom: 0;
+    background-color: #424642;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+label{
+    padding: 10px;
+    background-color: azure;
+    border-radius: 10px;
+    background-size: 50% 50%;
+}
+
+@media screen and (min-width : 319px){
+    .timeNow{ font-size: 3rem;}
+}

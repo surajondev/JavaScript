@@ -1,0 +1,9 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    background-image: url("https://cdn.discordapp.com/attachments/1010911412614336594/1020038414680207360/IMG_20220501_183707.jpg");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
