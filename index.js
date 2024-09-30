@@ -1,17 +1,17 @@
-var guess = Math.floor(Math.random() * 101)
-var chances = 0;
+let guess = Math.floor(Math.random() * 101)
+let chances = 0;
 
-var k = prompt(`guess the number from 0-100, chances are ${chances}`)
+let k = prompt(`guess the number from 0-100, chances are ${chances}`)
 
 while (k != guess) {
   chances++;
   if (k < guess) {
     console.log("k is less than guess")
-    var k = prompt(`guess the number from 0-100, chances are ${chances}`)
+    let k = prompt(`guess the number from 0-100, chances are ${chances}`)
   }
   else {
     console.log("k is greater than guess")
-    var k = prompt(`guess the number from 0-100, chances are ${chances}`)
+    let k = prompt(`guess the number from 0-100, chances are ${chances}`)
   }
 }
 if (k == guess) {
