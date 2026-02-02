@@ -34,3 +34,7 @@ Following languages have been used
 ## 📄 License
 
 The code is under `MIT Licence`. You can refer the `LICENCE` for more details.
+
+
+Rahul kumar
+Ismt College Chitwan
